@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".../../stylecss/style.css">
+    <link rel="stylesheet" href=".../../stylecss/planet.css">
+    <link rel="stylesheet" href=".../../stylecss/loader.css">
+    <link rel="stylesheet" href=".../../stylecss/modal.css">
+    <link rel="icon" href=".../../video.image/ico.png" type="image/x-icon">
+    <script type="module" src="src/firebaseauth.js"></script>
+    <script type="module" src="src/loguser.js"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="spinner">
+        <div class="spinner1"></div>
+    </div>
+    <header>
+        <img id="logo" src=".../../video.image/logo.png" alt="Логотип Космоскоп">
+        <h1>Добро пожаловать на Космоскоп</h1>
+    </header>
+
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">О нас</a>
+        <a href="#">Статьи</a>
+        <a href="#"> Контакты</a>
+        <div>
+        <a id="regbtn" href="#"> Регистрация</a>
+        </div>
+        <div><span id="loggedUserFName"></span></div>
+        <button id="logout" style="display: none;">Выйти</button>
+    </nav>
+       
+    <div class="modal" id="registrationForm">
+        <div class="card">
+            <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+            <a class="signup">Sign Up</a>
+            <div class="inputBox1">
+                <input id="rEmail" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+            
+            <div class="inputBox">
+                <input id="fName" type="text" required="required">
+                <span>Username</span>
+            </div>
+            
+            <div class="inputBox">
+                <input id="rPassword" type="password" required="required">
+                <span>Password</span>
+            </div>
+            
+            <button id="sumbitSignUp" class="enter">Enter</button>
+            
+            <span class="close">&times;</span>
+            <div class="switch">
+                <p>Already have an account?</p>
+                <button class="switchBtn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="loginForm" style="display: none;">
+        <div class="card">
+            <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+            <a class="alog">Login</a>
+            <div class="inputBox">
+                <input id="email" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+            
+            <div class="inputBox">
+                <input id="password" type="password" required="required">
+                <span>Password</span>
+            </div>
+            
+            <button id="sumbitSignIn" class="enter">Enter</button>
+            
+            <span class="close">&times;</span>
+            
+            <div class="switch">
+                <p>Don't have an account yet?</p>
+                <button class="switchBtn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <img class="milky-way" src=".../../video.image/2k_stars_milky_way.jpg" alt="milky-way">
+    <div class="planets">
+
+        <div class="earth">
+            <p class="txtearth" >
+                З е м л я
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="clouds"></div>
+        <div class="moon">
+        <p class="txtmoon">
+            Л у н а
+        </p>
+        <button>
+            <a href="#"><span>Подробнее</span></a> 
+            </button>
+        </div>
+        <div class="mars"> <p class="txtmars">
+            М а р с
+        </p>
+        <button>
+            <a href="#"><span>Подробнее</span></a> 
+            </button>
+    </div>
+        <div class="mercury"><p class="txtmercury">
+            М е р к у р и й
+        </p>
+        <button>
+            <a href="#"><span>Подробнее</span></a> 
+            </button></div>
+        <div class="venus">
+            <p class="txtvenus">
+                В е н е р а
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="jupiter">
+            <p class="txtjupiter">
+                Ю п и т е р
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="saturn">
+            <p class="txtsaturn">
+                С а т у р н
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="saturn-ring"></div>
+        <div class="saturn-ring2"></div>
+        <div class="uranus">
+            <p class="txturanus">
+                У р а н
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="neptune">
+            <p class="txtneptune">
+                Н е п т у н
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+        <div class="sun">
+            <p class="txtsun">
+                С о л н ц е
+            </p>
+            <button>
+                <a href="#"><span>Подробнее</span></a> 
+                </button>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        
+        <p>&copy; 2024 Космический сайт. Все права защищены.</p>
+    </footer>
+
+
+    <script src="src/index.js"></script>
+</body>
+</html>
