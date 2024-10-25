@@ -1,0 +1,1059 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@font-face {
+  font-family: 'Pobeda';
+  src: url(/font/ofont.ru_Pobeda.ttf);
+}
+
+$spacefont: 'Havelock Titling';
+$spacefontRUS: 'Pobeda';
+.planets{
+
+    position: absolute;
+    left: 250px;
+    padding: 45px;
+    @keyframes planetRotation {
+  
+    50% {
+      background-position: 500% 0%;
+      border: 0px solid #00000000;
+    }
+    100% {
+      background-position: 1100% 0%;
+      border: 0px solid #00000000;
+    }
+    }
+   
+
+  .earth{
+    a {
+      span{ 
+        left: 2px;
+      }
+      position: absolute;
+      top: 265px;
+      left: 46px;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #fefefe;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+      
+    }
+    
+    a::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleY(1);
+    }
+    
+    a:hover::before {
+      transform: scaleY(0);
+    }
+    
+    a::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleX(1);
+      transition-delay: 0.5s;
+    }
+    
+    a:hover::after {
+      transform: scaleX(0);
+    }
+    
+    a span {
+      position: relative;
+      z-index: 3;
+    }
+    
+    button {
+      background-color: none;
+      text-decoration: none;
+      background-color: #212121;
+      border: none;
+    }
+    .txtearth{
+      position: absolute;
+      left: 34%;
+      top: -70px;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+      font-size:x-large;
+  
+    }
+    top: 100px;
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg');
+    background-repeat: repeat-x;
+    background-size: 110% 100%;
+    opacity: 1;
+    animation-name: planetRotation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards !important;
+    box-shadow: inset -10px 8px 6px -5px #5e5c5c, 
+    inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(0, 153, 255, 0.322);
+    }
+  
+    .clouds{
+      top: 100px;
+      max-width: 250px;
+      max-height: 250px;
+      display: block;
+      width: 20rem;
+      height: 20rem;
+      position: absolute;
+      border-radius: 50%;
+      background-image: url('https://www.solarsystemscope.com/textures/download/2k_earth_clouds.jpg');
+      background-repeat: repeat-x;
+      background-size: 110% 100%;
+      opacity: 25%;
+      animation-name: planetRotation;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards !important;
+     
+      }
+  
+  .moon{
+    a {
+      span{
+        
+        left: 2px;
+      }
+      position: absolute;
+      top: 265px;
+      left: 46px;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #fefefe;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-decoration: none;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+    }
+    
+    a::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleY(1);
+    }
+    
+    a:hover::before {
+      transform: scaleY(0);
+    }
+    
+    a::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleX(1);
+      transition-delay: 0.5s;
+    }
+    
+    a:hover::after {
+      transform: scaleX(0);
+    }
+    
+    a span {
+      position: relative;
+      z-index: 3;
+    }
+    
+    button {
+      background-color: none;
+      text-decoration: none;
+      background-color: #212121;
+      border: none;
+    }
+    .txtmoon{
+      position: absolute;
+      left: 37%;
+      top: -70px;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+      font-size:x-large;
+  
+    }
+  top: 605px;
+  max-width: 250px;
+  max-height: 250px;
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  background-image: url('https://www.solarsystemscope.com/textures/download/2k_moon.jpg');
+  background-repeat: repeat-x;
+  background-size: 110% 100%;
+  opacity: 1;
+  animation-name: planetRotation;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards !important;
+  box-shadow: inset -10px 8px 6px -5px #ffffff, 
+  inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(255, 255, 255, 0.3215686275);
+  }
+
+    
+    .mars{
+      a {
+        span{
+          left: 2px;
+        }
+        position: absolute;
+        top: 265px;
+        left: 46px;
+        display: inline-block;
+        padding: 15px 30px;
+        border: 2px solid #fefefe;
+        text-transform: uppercase;
+        color: #fefefe;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-family: 'Pobeda';
+      }
+      
+      a::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 12px);
+        background-color: #212121;
+        transition: 0.3s ease-in-out;
+        transform: scaleY(1);
+      }
+      
+      a:hover::before {
+        transform: scaleY(0);
+      }
+      
+      a::after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: -2px;
+        height: calc(100% + 4px);
+        width: calc(100% - 12px);
+        background-color: #212121;
+        transition: 0.3s ease-in-out;
+        transform: scaleX(1);
+        transition-delay: 0.5s;
+      }
+      
+      a:hover::after {
+        transform: scaleX(0);
+      }
+      
+      a span {
+        position: relative;
+        z-index: 3;
+      }
+      
+      button {
+        background-color: none;
+        text-decoration: none;
+        background-color: #212121;
+        border: none;
+      }
+      .txtmars{
+        position: absolute;
+        left: 37%;
+        top: -70px;
+        font-weight: 100;
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-family: 'Pobeda';
+        font-size:x-large;
+    
+      }
+    top: 100px;;
+    left: 570px;
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_mars.jpg');
+    background-repeat: repeat-x;
+    background-size: 110% 100%;
+    opacity: 1;
+    animation-name: planetRotation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards !important;
+    box-shadow: inset -10px 8px 6px -5px #a34d1b, 
+        inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(238, 48, 0, 0.322);
+    }
+ 
+      .mercury{
+        a {
+          span{
+            left: 2px;
+          }
+          position: absolute;
+          top: 265px;
+          left: 46px;
+          display: inline-block;
+          padding: 15px 30px;
+          border: 2px solid #fefefe;
+          text-transform: uppercase;
+          color: #fefefe;
+          text-decoration: none;
+          font-weight: 100;
+          font-size: 24px;
+          letter-spacing: 3px;
+          font-family: 'Pobeda';
+        }
+        
+        a::before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -2px;
+          width: calc(100% + 4px);
+          height: calc(100% - 12px);
+          background-color: #212121;
+          transition: 0.3s ease-in-out;
+          transform: scaleY(1);
+        }
+        
+        a:hover::before {
+          transform: scaleY(0);
+        }
+        
+        a::after {
+          content: '';
+          position: absolute;
+          left: 6px;
+          top: -2px;
+          height: calc(100% + 4px);
+          width: calc(100% - 12px);
+          background-color: #212121;
+          transition: 0.3s ease-in-out;
+          transform: scaleX(1);
+          transition-delay: 0.5s;
+        }
+        
+        a:hover::after {
+          transform: scaleX(0);
+        }
+        
+        a span {
+          position: relative;
+          z-index: 3;
+        }
+        
+        button {
+          background-color: none;
+          text-decoration: none;
+          background-color: #212121;
+          border: none;
+        }
+        .txtmercury{
+          position: absolute;
+          left: 24%;
+          top: -70px;
+          font-weight: 100;
+          font-size: 24px;
+          letter-spacing: 3px;
+          font-family: 'Pobeda';
+          font-size:x-large;
+      
+        }
+        top: 605px; 
+        left:  570px;
+        max-width: 250px;
+        max-height: 250px;
+        display: block;
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        border-radius: 50%;
+        background-image: url('https://www.solarsystemscope.com/textures/download/2k_mercury.jpg');
+        background-repeat: repeat-x;
+        background-size: 110% 100%;
+        opacity: 1;
+        animation-name: planetRotation;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards !important;
+        box-shadow: inset -10px 8px 6px -5px #acabab, 
+        inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(255, 255, 255, 0.3215686275);
+        }
+
+        .venus{
+          a {
+            span{
+              left: 2px;
+            }
+            position: absolute;
+            top: 265px;
+            left: 46px;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 2px solid #fefefe;
+            text-transform: uppercase;
+            color: #fefefe;
+            text-decoration: none;
+            font-weight: 100;
+            font-size: 24px;
+            letter-spacing: 3px;
+            font-family: 'Pobeda';
+          }
+          
+          a::before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: -2px;
+            width: calc(100% + 4px);
+            height: calc(100% - 12px);
+            background-color: #212121;
+            transition: 0.3s ease-in-out;
+            transform: scaleY(1);
+          }
+          
+          a:hover::before {
+            transform: scaleY(0);
+          }
+          
+          a::after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: -2px;
+            height: calc(100% + 4px);
+            width: calc(100% - 12px);
+            background-color: #212121;
+            transition: 0.3s ease-in-out;
+            transform: scaleX(1);
+            transition-delay: 0.5s;
+          }
+          
+          a:hover::after {
+            transform: scaleX(0);
+          }
+          
+          a span {
+            position: relative;
+            z-index: 3;
+          }
+          
+          button {
+            background-color: none;
+            text-decoration: none;
+            background-color: #212121;
+            border: none;
+          }
+          .txtvenus{
+            position: absolute;
+            left: 32%;
+            top: -70px;
+            font-weight: 100;
+            font-size: 24px;
+            letter-spacing: 3px;
+            font-family: 'Pobeda';
+            font-size:x-large;
+        
+          }
+          top: 605px; 
+          left:  1140px;
+          max-width: 250px;
+          max-height: 250px;
+          display: block;
+          width: 20rem;
+          height: 20rem;
+          position: absolute;
+          border-radius: 50%;
+          background-image: url('https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg');
+          background-repeat: repeat-x;
+          background-size: 110% 100%;
+          opacity: 1;
+          animation-name: planetRotation;
+          animation-duration: 20s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards !important;
+          box-shadow: inset -10px 8px 6px -5px #b87612, 
+          inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(172, 103, 12, 0.322);
+          }
+          .jupiter{
+            a {
+              span{
+                left: 2px;
+              }
+              position: absolute;
+              top: 265px;
+              left: 46px;
+              display: inline-block;
+              padding: 15px 30px;
+              border: 2px solid #fefefe;
+              text-transform: uppercase;
+              color: #fefefe;
+              text-decoration: none;
+              font-weight: 100;
+              font-size: 24px;
+              letter-spacing: 3px;
+              font-family: 'Pobeda';
+            }
+            
+            a::before {
+              content: '';
+              position: absolute;
+              top: 6px;
+              left: -2px;
+              width: calc(100% + 4px);
+              height: calc(100% - 12px);
+              background-color: #212121;
+              transition: 0.3s ease-in-out;
+              transform: scaleY(1);
+            }
+            
+            a:hover::before {
+              transform: scaleY(0);
+            }
+            
+            a::after {
+              content: '';
+              position: absolute;
+              left: 6px;
+              top: -2px;
+              height: calc(100% + 4px);
+              width: calc(100% - 12px);
+              background-color: #212121;
+              transition: 0.3s ease-in-out;
+              transform: scaleX(1);
+              transition-delay: 0.5s;
+            }
+            
+            a:hover::after {
+              transform: scaleX(0);
+            }
+            
+            a span {
+              position: relative;
+              z-index: 3;
+            }
+            
+            button {
+              background-color: none;
+              text-decoration: none;
+              background-color: #212121;
+              border: none;
+            }
+            .txtjupiter{
+              position: absolute;
+              left: 30%;
+              top: -70px;
+              font-weight: 100;
+              font-size: 24px;
+              letter-spacing: 3px;
+              font-family: 'Pobeda';
+              font-size:x-large;
+          
+            }
+            top: 100px; 
+            left:  1140px;
+            max-width: 250px;
+            max-height: 250px;
+            display: block;
+            width: 20rem;
+            height: 20rem;
+            position: absolute;
+            border-radius: 50%;
+            background-image: url('https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg');
+            background-repeat: repeat-x;
+            background-size: 110% 100%;
+            opacity: 1;
+            animation-name: planetRotation;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards !important;
+            box-shadow: inset -10px 8px 6px -5px #bea278, 
+            inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(218, 187, 147, 0.322);
+            }
+            .saturn{
+              a {
+                span{
+                  left: 2px;
+                }
+                position: absolute;
+                top: 265px;
+                left: 46px;
+                display: inline-block;
+                padding: 15px 30px;
+                border: 2px solid #fefefe;
+                text-transform: uppercase;
+                color: #fefefe;
+                text-decoration: none;
+                font-weight: 100;
+                font-size: 24px;
+                letter-spacing: 3px;
+                font-family: 'Pobeda';
+              }
+              
+              a::before {
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: -2px;
+                width: calc(100% + 4px);
+                height: calc(100% - 12px);
+                background-color: #212121;
+                transition: 0.3s ease-in-out;
+                transform: scaleY(1);
+              }
+              
+              a:hover::before {
+                transform: scaleY(0);
+              }
+              
+              a::after {
+                content: '';
+                position: absolute;
+                left: 6px;
+                top: -2px;
+                height: calc(100% + 4px);
+                width: calc(100% - 12px);
+                background-color: #212121;
+                transition: 0.3s ease-in-out;
+                transform: scaleX(1);
+                transition-delay: 0.5s;
+              }
+              
+              a:hover::after {
+                transform: scaleX(0);
+              }
+              
+              a span {
+                position: relative;
+                z-index: 3;
+              }
+              
+              button {
+                background-color: none;
+                text-decoration: none;
+                background-color: #212121;
+                border: none;
+              }
+              .txtsaturn{
+                position: absolute;
+                left: 31%;
+                top: -70px;
+                font-weight: 100;
+                font-size: 24px;
+                letter-spacing: 3px;
+                font-family: 'Pobeda';
+                font-size:x-large;
+            
+              }
+              z-index: 2;
+              top: 1100px;
+              max-width: 250px;
+              max-height: 250px;
+              display: block;
+              width: 20rem;
+              height: 20rem;
+              position: absolute;
+              border-radius: 50%;
+              background-image: url('https://www.solarsystemscope.com/textures/download/2k_saturn.jpg');
+              background-repeat: repeat-x;
+              background-size: 110% 100%;
+              opacity: 1;
+              animation-name: planetRotation;
+              animation-duration: 10s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+              animation-fill-mode: forwards !important;
+              box-shadow: inset -10px 8px 6px -5px #e9e49c, 
+              inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(219, 212, 142, 0.322);
+          }
+          .saturn-ring{
+            z-index: 3;
+            position: relative;
+            top: 970px;
+            left: 95px;
+            max-width: 55px;
+            max-height: 450px;
+            display: block;
+            width: 10rem;
+            height: 90rem;
+            transform: rotate(120deg);
+            background-image: url('https://www.solarsystemscope.com/textures/download/2k_saturn_ring_alpha.png');
+            background-repeat: repeat-x;
+            background-size: 110% 100%;
+            opacity: 1;
+            border-radius: 100%;
+            animation-name: planetRotation;
+            animation-duration: 16s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards !important;
+        }
+        .saturn-ring2{
+          position: relative;
+          top: 520px;
+          left: 95px;
+          max-width: 55px;
+          max-height: 450px;
+          display: block;
+          width: 10rem;
+          height: 90rem;
+          transform: rotate(120deg);
+          background-image: url('https://www.solarsystemscope.com/textures/download/2k_saturn_ring_alpha.png');
+          background-repeat: repeat-x;
+          background-size: 110% 100%;
+          opacity: 1;
+          border-radius: 40%;
+          animation-name: planetRotation;
+          animation-duration: 16s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards !important;
+      }
+      .uranus{
+        a {
+          span{
+            left: 2px;
+          }
+          position: absolute;
+          top: 265px;
+          left: 46px;
+          display: inline-block;
+          padding: 15px 30px;
+          border: 2px solid #fefefe;
+          text-transform: uppercase;
+          color: #fefefe;
+          text-decoration: none;
+          font-weight: 100;
+          font-size: 24px;
+          letter-spacing: 3px;
+          font-family: 'Pobeda';
+        }
+        
+        a::before {
+          content: '';
+          position: absolute;
+          top: 6px;
+          left: -2px;
+          width: calc(100% + 4px);
+          height: calc(100% - 12px);
+          background-color: #212121;
+          transition: 0.3s ease-in-out;
+          transform: scaleY(1);
+        }
+        
+        a:hover::before {
+          transform: scaleY(0);
+        }
+        
+        a::after {
+          content: '';
+          position: absolute;
+          left: 6px;
+          top: -2px;
+          height: calc(100% + 4px);
+          width: calc(100% - 12px);
+          background-color: #212121;
+          transition: 0.3s ease-in-out;
+          transform: scaleX(1);
+          transition-delay: 0.5s;
+        }
+        
+        a:hover::after {
+          transform: scaleX(0);
+        }
+        
+        a span {
+          position: relative;
+          z-index: 3;
+        }
+        
+        button {
+          background-color: none;
+          text-decoration: none;
+          background-color: #212121;
+          border: none;
+        }
+        .txturanus{
+          position: absolute;
+          left: 38%;
+          top: -70px;
+          font-weight: 100;
+          font-size: 24px;
+          letter-spacing: 3px;
+          font-family: 'Pobeda';
+          font-size:x-large;
+      
+        }
+        top: 1100px;
+        left: 570px;
+        max-width: 250px;
+        max-height: 250px;
+        display: block;
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+        border-radius: 50%;
+        background-image: url('https://www.solarsystemscope.com/textures/download/2k_uranus.jpg');
+        background-repeat: repeat-x;
+        background-size: 110% 100%;
+        opacity: 1;
+        animation-name: planetRotation;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards !important;
+        box-shadow: inset -10px 8px 6px -5px #569db3, 
+        inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 225, 230, 0.322);
+    }
+    .neptune{
+      a {
+        span{
+          left: 2px;
+        }
+        position: absolute;
+        top: 265px;
+        left: 46px;
+        display: inline-block;
+        padding: 15px 30px;
+        border: 2px solid #fefefe;
+        text-transform: uppercase;
+        color: #fefefe;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-family: 'Pobeda';
+      }
+      
+      a::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: -2px;
+        width: calc(100% + 4px);
+        height: calc(100% - 12px);
+        background-color: #212121;
+        transition: 0.3s ease-in-out;
+        transform: scaleY(1);
+      }
+      
+      a:hover::before {
+        transform: scaleY(0);
+      }
+      
+      a::after {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: -2px;
+        height: calc(100% + 4px);
+        width: calc(100% - 12px);
+        background-color: #212121;
+        transition: 0.3s ease-in-out;
+        transform: scaleX(1);
+        transition-delay: 0.5s;
+      }
+      
+      a:hover::after {
+        transform: scaleX(0);
+      }
+      
+      a span {
+        position: relative;
+        z-index: 3;
+      }
+      
+      button {
+        background-color: none;
+        text-decoration: none;
+        background-color: #212121;
+        border: none;
+      }
+      .txtneptune{
+        position: absolute;
+        left: 31%;
+        top: -70px;
+        font-weight: 100;
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-family: 'Pobeda';
+        font-size:x-large;
+    
+      }
+      top: 1100px;
+      left: 1140px;
+      max-width: 250px;
+      max-height: 250px;
+      display: block;
+      width: 20rem;
+      height: 20rem;
+      position: absolute;
+      border-radius: 50%;
+      background-image: url('https://www.solarsystemscope.com/textures/download/2k_neptune.jpg');
+      background-repeat: repeat-x;
+      background-size: 110% 100%;
+      opacity: 1;
+      animation-name: planetRotation;
+      animation-duration: 20s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards !important;
+      box-shadow: inset -10px 8px 6px -5px #413fad, 
+      inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 104, 230, 0.322);
+  }
+  .sun{
+    a {
+      span{
+        left: 2px;
+      }
+      position: absolute;
+      top: 265px;
+      left: 46px;
+      display: inline-block;
+      padding: 15px 30px;
+      border: 2px solid #fefefe;
+      text-transform: uppercase;
+      color: #fefefe;
+      text-decoration: none;
+      text-decoration: none;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+    }
+    
+    a::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleY(1);
+    }
+    
+    a:hover::before {
+      transform: scaleY(0);
+    }
+    
+    a::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: -2px;
+      height: calc(100% + 4px);
+      width: calc(100% - 12px);
+      background-color: #212121;
+      transition: 0.3s ease-in-out;
+      transform: scaleX(1);
+      transition-delay: 0.5s;
+    }
+    
+    a:hover::after {
+      transform: scaleX(0);
+    }
+    
+    a span {
+      position: relative;
+      z-index: 3;
+    }
+    
+    button {
+      background-color: none;
+      text-decoration: none;
+      background-color: #212121;
+      border: none;
+    }
+    .txtsun{
+      position: absolute;
+      left: 31.5%;
+      top: -70px;
+      font-weight: 100;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-family: 'Pobeda';
+      font-size:x-large;
+  
+    }
+    top: 1620px;
+    left: 570px;
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url('https://www.solarsystemscope.com/textures/download/2k_sun.jpg');
+    background-repeat: repeat-x;
+    background-size: 110% 100%;
+    opacity: 1;
+    animation-name: planetRotation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards !important;
+    box-shadow: inset -10px 8px 6px -5px #aa5b00, 
+    inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(230, 154, 82, 0.322);
+}
+  }
+
+  
