@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+@font-face {
+  font-family: "Pobeda";
+  src: url(/font/ofont.ru_Pobeda.ttf);
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 32, 32);
+  color: #ffffff;
+  overflow: hidden;
+}
+body h1, html h1 {
+  font-family: "Pobeda";
+}
+body .milky-way, html .milky-way {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 2120px;
+}
+body header, html header {
+  background-color: #161616;
+  padding: 10px;
+  text-align: center;
+}
+body header a, html header a {
+  font-family: "Pobeda";
+}
+body header #logo, html header #logo {
+  position: absolute;
+  cursor: pointer;
+  animation: bounce 0.5s;
+  transform-origin: center bottom;
+  height: 100px;
+  top: 1px;
+  left: 25px;
+  transition: transform 0.5s;
+}
+body nav, html nav {
+  background-color: #111111;
+  text-align: center;
+  padding: 15px;
+}
+body nav #logout, html nav #logout {
+  z-index: 1;
+  position: absolute;
+  top: 108px;
+  left: 93%;
+  color: white;
+  background-color: black;
+  font-family: "Pobeda";
+  font-size: 1.5rem;
+  border: 1px solid white;
+  text-align: center;
+  min-width: 50px;
+  max-width: 900px;
+  cursor: pointer;
+  transition: all 0.5s;
+  animation: slideInRight 0.5s ease;
+}
+body nav #logout:hover, html nav #logout:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+}
+body nav #loggedUserFName, html nav #loggedUserFName {
+  position: absolute;
+  top: 110px;
+  left: 89%;
+  color: white;
+  font-family: "Pobeda";
+  font-size: 1.5rem;
+  border: 1px solid white;
+  text-align: center;
+  min-width: 50px;
+  max-width: 900px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+body nav #loggedUserFName:hover, html nav #loggedUserFName:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+}
+body nav #regbtn, html nav #regbtn {
+  position: absolute;
+  display: inline-block;
+  left: 85%;
+  top: 110px;
+  width: 100px;
+}
+body nav a, html nav a {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+}
+body nav a:hover, html nav a:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+}
+body footer, html footer {
+  position: fixed;
+  z-index: 12;
+  background-color: #111111;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  max-height: 70px;
+}
+body footer p, html footer p {
+  letter-spacing: 5px;
+  font-size: 19px;
+  font-family: "Pobeda";
+}
+
+/*# sourceMappingURL=style.css.map */
