@@ -24,7 +24,7 @@
   font-family: "Havelock Titling";
   font-size: 45px;
 }
-.modal .card {
+.modal .cardreg {
   position: absolute;
   top: 20%;
   left: 42%;
@@ -40,7 +40,7 @@
   box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
   border-radius: 8px;
 }
-.modal .card .messageDiv {
+.modal .cardreg .messageDiv {
   background-color: black;
   border-radius: 5px;
   border: 2px solid #000;
@@ -52,7 +52,7 @@
   opacity: 0;
   animation: FadeOut 7s forwards;
 }
-.modal .card .signup {
+.modal .cardreg .signup {
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -63,14 +63,14 @@
   font-family: "Havelock Titling";
   font-size: 45px;
 }
-.modal .card .inputBox,
-.modal .card .inputBox1 {
+.modal .cardreg .inputBox,
+.modal .cardreg .inputBox1 {
   position: relative;
   width: 250px;
   font-family: "Havelock Titling";
 }
-.modal .card .inputBox input,
-.modal .card .inputBox1 input {
+.modal .cardreg .inputBox input,
+.modal .cardreg .inputBox1 input {
   width: 100%;
   padding: 10px;
   outline: none;
@@ -83,8 +83,8 @@
   transition: 0.1s;
   border-bottom-left-radius: 8px;
 }
-.modal .card .inputBox span,
-.modal .card .inputBox1 span {
+.modal .cardreg .inputBox span,
+.modal .cardreg .inputBox1 span {
   margin-top: -35px;
   position: absolute;
   left: 0;
@@ -99,8 +99,8 @@
   letter-spacing: 3px;
   border-radius: 8px;
 }
-.modal .card .inputBox input:valid ~ span,
-.modal .card .inputBox input:focus ~ span {
+.modal .cardreg .inputBox input:valid ~ span,
+.modal .cardreg .inputBox input:focus ~ span {
   transform: translateX(113px) translateY(-15px);
   font-size: 0.8em;
   padding: 5px 10px;
@@ -109,8 +109,8 @@
   color: #fff;
   border: 2px;
 }
-.modal .card .inputBox1 input:valid ~ span,
-.modal .card .inputBox1 input:focus ~ span {
+.modal .cardreg .inputBox1 input:valid ~ span,
+.modal .cardreg .inputBox1 input:focus ~ span {
   transform: translateX(156px) translateY(-15px);
   font-size: 0.8em;
   padding: 5px 10px;
@@ -119,14 +119,14 @@
   color: #fff;
   border: 2px;
 }
-.modal .card .inputBox input:valid,
-.modal .card .inputBox input:focus,
-.modal .card .inputBox1 input:valid,
-.modal .card .inputBox1 input:focus {
+.modal .cardreg .inputBox input:valid,
+.modal .cardreg .inputBox input:focus,
+.modal .cardreg .inputBox1 input:valid,
+.modal .cardreg .inputBox1 input:focus {
   border: 2px solid #000;
   border-radius: 8px;
 }
-.modal .card .enter {
+.modal .cardreg .enter {
   height: 45px;
   width: 100px;
   border-radius: 5px;
@@ -142,11 +142,11 @@
   font-size: 15px;
   letter-spacing: 4px;
 }
-.modal .card .enter:hover {
+.modal .cardreg .enter:hover {
   background-color: rgb(0, 0, 0);
   color: white;
 }
-.modal .card .close {
+.modal .cardreg .close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -154,7 +154,7 @@
   cursor: pointer;
   color: black;
 }
-.modal .card .signup {
+.modal .cardreg .signup {
   text-align: center;
   margin-bottom: 20px;
   display: block;

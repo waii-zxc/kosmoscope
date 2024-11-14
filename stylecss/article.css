@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  background-image: url(../video.image/2k_stars_milky_way.jpg);
+  background-color: rgb(34, 32, 32);
+  color: #ffffff;
+}
+body #cards-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  align-content: flex-start;
+  top: 50px;
+}
+body #cards-container h1 {
+  margin: 30px;
+  font-size: 76px;
+}
+body #cards-container button {
+  border: 1px solid white;
+  text-align: center;
+  width: 190px;
+  height: 70px;
+  font-family: "Pobeda";
+  color: white;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: black;
+  top: 10px;
+}
+body #cards-container button:hover {
+  color: black;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.075);
+  background-color: white;
+}
+body #search-input {
+  position: relative;
+  width: 300px;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: 2px solid #3e3e5e;
+  border-radius: 5px;
+  background: #080808;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  left: 1500px;
+  font-family: "Pobeda";
+  font-size: 20px;
+}
+body #search-result {
+  font-family: "Pobeda";
+  font-size: 50px;
+}
+body footer {
+  text-align: center;
+  background-color: #191a1b;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  top: 100px;
+}
+body footer p {
+  letter-spacing: 5px;
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body header {
+    width: 110% !important;
+  }
+  body img {
+    width: 130px;
+    height: 100px !important;
+    top: -2px !important;
+    left: -25px !important;
+  }
+  body .modal .cardreg {
+    left: 85px;
+    top: 220px;
+    width: 300px;
+    height: 600px;
+  }
+  body .modal .cardreg p {
+    top: 35px;
+    left: 30px;
+  }
+  body .modal a {
+    font-size: 25px !important;
+  }
+  body h1 {
+    position: relative;
+    font-size: 25px;
+    top: 10px;
+    left: 10px;
+  }
+  body header {
+    width: auto !important;
+  }
+  body nav {
+    width: auto !important;
+  }
+  body nav a {
+    position: relative;
+    left: -25px;
+    margin: 5px;
+    width: 45px;
+    font-size: 18px;
+  }
+  body nav #loggedUserFName {
+    left: 15px;
+    top: 150px;
+  }
+  body nav #logout {
+    left: 65px;
+    top: 150px;
+  }
+  body nav #regbtn {
+    font-size: 17px;
+    width: 60px;
+    top: 90px;
+    left: 75%;
+  }
+  body nav #addarticle {
+    margin: 0;
+  }
+  body nav {
+    width: auto !important;
+  }
+  body nav a {
+    position: relative;
+    left: -25px;
+    margin: 5px;
+    width: 45px;
+    font-size: 18px;
+  }
+  body input {
+    width: 120px !important;
+    left: 42% !important;
+    top: 60px !important;
+  }
+  body .cardcard {
+    width: 65px !important;
+    height: 182px !important;
+  }
+  body .cardcard img {
+    position: relative;
+    top: -40px !important;
+    left: 1.5px !important;
+  }
+  body .cardcard h1 {
+    position: relative;
+    font-size: 20px !important;
+    left: -25px !important;
+    top: -30px !important;
+  }
+  body .cardcard .more-button {
+    width: 60px !important;
+    height: 30px !important;
+    font-size: 15px !important;
+    top: -35px !important;
+  }
+  body .cardcard .more-button span {
+    position: relative;
+    left: -7px !important;
+  }
+  body footer {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=article.css.map */

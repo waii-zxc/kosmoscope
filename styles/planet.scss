@@ -7,10 +7,13 @@
 $spacefont: 'Havelock Titling';
 $spacefontRUS: 'Pobeda';
 .planets{
-
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+    top: 200px;
     position: absolute;
     left: 250px;
-    padding: 45px;
+  
     @keyframes planetRotation {
   
     50% {
@@ -23,8 +26,108 @@ $spacefontRUS: 'Pobeda';
     }
     }
    
+    .planet-title { 
+
+         font-family: $spacefontRUS;
+         font-size: 32px;
+        }
+        .planet-title2 { 
+
+          font-family: $spacefontRUS;
+          font-size: 24px;
+         }
+      .planet-image {
+       width: 570px;    
+       height: 350px;
+      }
 
   .earth{
+  
+    .infoearth {
+      position: fixed;
+      top: 0;
+      right: -700px;
+      width: 600px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: right 0.6s;
+      z-index: 999;
+      color: black;
+      padding: 10px;
+      overflow-y: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      &.open {
+        right: 0;
+      }
+    
+      #closeinfo {
+        border: 1px solid white;
+        text-align: center;
+        width: 110px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 15px;
+        top: -10px;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
+      #editTextBtn{
+        display: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 50px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 10px;
+        top: -10px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+      }
+  
+    }
+    #saveTextBtn{
+      display: none;
+      border: 1px solid white;
+      text-align: center;
+      width: 150px;
+      font-family: 'Pobeda';
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 35px;
+      font-size: 25px;
+      position: relative;
+      transition: all 0.5s;
+      padding: 0 10px;
+      top: -10px;
+      cursor: pointer;
+      &:hover {
+          color: black;
+          text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+          background-color: white;
+          border: 1px solid black;
+    }
+  }
+   }
     a {
       span{ 
         left: 2px;
@@ -143,6 +246,90 @@ $spacefontRUS: 'Pobeda';
       }
   
   .moon{
+    .infomoon {
+      position: fixed;
+      top: 0;
+      right: -700px;
+      width: 600px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: right 0.6s;
+      z-index: 999;
+      color: black;
+      padding: 10px;
+      overflow-y: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      &.open {
+        right: 0;
+      }
+      #closeinfo {
+        border: 1px solid white;
+        text-align: center;
+        width: 110px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 15px;
+        top: -10px;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
+      #editTextBtn{
+        display: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 50px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 10px;
+        top: -10px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+      }
+  
+    }
+    #saveTextBtn{
+      display: none;
+      border: 1px solid white;
+      text-align: center;
+      width: 150px;
+      font-family: 'Pobeda';
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 35px;
+      font-size: 25px;
+      position: relative;
+      transition: all 0.5s;
+      padding: 0 10px;
+      top: -10px;
+      cursor: pointer;
+      &:hover {
+          color: black;
+          text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+          background-color: white;
+          border: 1px solid black;
+    }
+  }
+    }
     a {
       span{
         
@@ -241,6 +428,90 @@ $spacefontRUS: 'Pobeda';
 
     
     .mars{
+      .infomars {
+        position: fixed;
+        top: 0;
+        right: -700px;
+        width: 600px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: right 0.6s;
+        z-index: 999;
+        color: black;
+        padding: 10px;
+        overflow-y: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        &.open {
+          right: 0;
+        }
+        #closeinfo {
+          border: 1px solid white;
+          text-align: center;
+          width: 110px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 15px;
+          top: -10px;
+          cursor: pointer;
+  
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+          }
+      }
+        #editTextBtn{
+          display: none;
+          border: 1px solid white;
+          text-align: center;
+          width: 50px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 10px;
+          top: -10px;
+          cursor: pointer;
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+        }
+    
+      }
+      #saveTextBtn{
+        display: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 150px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 10px;
+        top: -10px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+      }
+    }
+      }
       a {
         span{
           left: 2px;
@@ -338,6 +609,90 @@ $spacefontRUS: 'Pobeda';
     }
  
       .mercury{
+        .infomercury {
+          position: fixed;
+          top: 0;
+          right: -700px;
+          width: 600px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.9);
+          transition: right 0.6s;
+          z-index: 999;
+          color: black;
+          padding: 10px;
+          overflow-y: auto;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          &.open {
+            right: 0;
+          }
+          #closeinfo {
+            border: 1px solid white;
+            text-align: center;
+            width: 110px;
+            font-family: 'Pobeda';
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 25px;
+            position: relative;
+            transition: all 0.5s;
+            padding: 0 15px;
+            top: -10px;
+            cursor: pointer;
+    
+            &:hover {
+                color: black;
+                text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: white;
+                border: 1px solid black;
+            }
+        }
+          #editTextBtn{
+            display: none;
+            border: 1px solid white;
+            text-align: center;
+            width: 50px;
+            font-family: 'Pobeda';
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 25px;
+            position: relative;
+            transition: all 0.5s;
+            padding: 0 10px;
+            top: -10px;
+            cursor: pointer;
+            &:hover {
+                color: black;
+                text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: white;
+                border: 1px solid black;
+          }
+      
+        }
+        #saveTextBtn{
+          display: none;
+          border: 1px solid white;
+          text-align: center;
+          width: 150px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 10px;
+          top: -10px;
+          cursor: pointer;
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+        }
+      }
+        }
         a {
           span{
             left: 2px;
@@ -435,6 +790,90 @@ $spacefontRUS: 'Pobeda';
         }
 
         .venus{
+          .infovenus {
+            z-index: 999;
+            position: fixed;
+            top: 0;
+            right: -700px;
+            width: 600px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: right 0.6s;
+            color: black;
+            padding: 10px;
+            overflow-y: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            &.open {
+              right: 0;
+            }
+            #closeinfo {
+              border: 1px solid white;
+              text-align: center;
+              width: 110px;
+              font-family: 'Pobeda';
+              color: #ffffff;
+              text-decoration: none;
+              margin: 0 35px;
+              font-size: 25px;
+              position: relative;
+              transition: all 0.5s;
+              padding: 0 15px;
+              top: -10px;
+              cursor: pointer;
+      
+              &:hover {
+                  color: black;
+                  text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                  background-color: white;
+                  border: 1px solid black;
+              }
+          }
+            #editTextBtn{
+              display: none;
+              border: 1px solid white;
+              text-align: center;
+              width: 50px;
+              font-family: 'Pobeda';
+              color: #ffffff;
+              text-decoration: none;
+              margin: 0 35px;
+              font-size: 25px;
+              position: relative;
+              transition: all 0.5s;
+              padding: 0 10px;
+              top: -10px;
+              cursor: pointer;
+              &:hover {
+                  color: black;
+                  text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                  background-color: white;
+                  border: 1px solid black;
+            }
+        
+          }
+          #saveTextBtn{
+            display: none;
+            border: 1px solid white;
+            text-align: center;
+            width: 150px;
+            font-family: 'Pobeda';
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 25px;
+            position: relative;
+            transition: all 0.5s;
+            padding: 0 10px;
+            top: -10px;
+            cursor: pointer;
+            &:hover {
+                color: black;
+                text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: white;
+                border: 1px solid black;
+          }
+        }
+          }
           a {
             span{
               left: 2px;
@@ -531,6 +970,90 @@ $spacefontRUS: 'Pobeda';
           inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(172, 103, 12, 0.322);
           }
           .jupiter{
+            .infojupiter {
+              position: fixed;
+              top: 0;
+              right: -700px;
+              width: 600px;
+              height: 100%;
+              background-color: rgba(255, 255, 255, 0.9);
+              transition: right 0.6s;
+              z-index: 999;
+              color: black;
+              padding: 10px;
+              overflow-y: auto;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              &.open {
+                right: 0;
+              }
+              #closeinfo {
+                border: 1px solid white;
+                text-align: center;
+                width: 110px;
+                font-family: 'Pobeda';
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 35px;
+                font-size: 25px;
+                position: relative;
+                transition: all 0.5s;
+                padding: 0 15px;
+                top: -10px;
+                cursor: pointer;
+        
+                &:hover {
+                    color: black;
+                    text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                    background-color: white;
+                    border: 1px solid black;
+                }
+            }
+              #editTextBtn{
+                display: none;
+                border: 1px solid white;
+                text-align: center;
+                width: 50px;
+                font-family: 'Pobeda';
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 35px;
+                font-size: 25px;
+                position: relative;
+                transition: all 0.5s;
+                padding: 0 10px;
+                top: -10px;
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                    text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                    background-color: white;
+                    border: 1px solid black;
+              }
+          
+            }
+            #saveTextBtn{
+              display: none;
+              border: 1px solid white;
+              text-align: center;
+              width: 150px;
+              font-family: 'Pobeda';
+              color: #ffffff;
+              text-decoration: none;
+              margin: 0 35px;
+              font-size: 25px;
+              position: relative;
+              transition: all 0.5s;
+              padding: 0 10px;
+              top: -10px;
+              cursor: pointer;
+              &:hover {
+                  color: black;
+                  text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                  background-color: white;
+                  border: 1px solid black;
+            }
+          }
+            }
             a {
               span{
                 left: 2px;
@@ -627,6 +1150,92 @@ $spacefontRUS: 'Pobeda';
             inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(218, 187, 147, 0.322);
             }
             .saturn{
+              .infosaturn {
+                position: fixed;
+                top: 0;
+                right: -700px;
+                width: 600px;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                transition: right 0.6s;
+                z-index: 999;
+                color: black;
+                padding: 10px;
+                overflow-y: auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+                &.open {
+                    right: 0;
+                }
+            
+                #closeinfo {
+                  border: 1px solid white;
+                  text-align: center;
+                  width: 110px;
+                  font-family: 'Pobeda';
+                  color: #ffffff;
+                  text-decoration: none;
+                  margin: 0 35px;
+                  font-size: 25px;
+                  position: relative;
+                  transition: all 0.5s;
+                  padding: 0 15px;
+                  top: -10px;
+                  cursor: pointer;
+          
+                  &:hover {
+                      color: black;
+                      text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                      background-color: white;
+                      border: 1px solid black;
+                  }
+              }
+                #editTextBtn{
+                  display: none;
+                  border: 1px solid white;
+                  text-align: center;
+                  width: 50px;
+                  font-family: 'Pobeda';
+                  color: #ffffff;
+                  text-decoration: none;
+                  margin: 0 35px;
+                  font-size: 25px;
+                  position: relative;
+                  transition: all 0.5s;
+                  padding: 0 10px;
+                  top: -10px;
+                  cursor: pointer;
+                  &:hover {
+                      color: black;
+                      text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                      background-color: white;
+                      border: 1px solid black;
+                }
+            
+              }
+              #saveTextBtn{
+                display: none;
+                border: 1px solid white;
+                text-align: center;
+                width: 150px;
+                font-family: 'Pobeda';
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 35px;
+                font-size: 25px;
+                position: relative;
+                transition: all 0.5s;
+                padding: 0 10px;
+                top: -10px;
+                cursor: pointer;
+                &:hover {
+                    color: black;
+                    text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                    background-color: white;
+                    border: 1px solid black;
+              }
+            }
+            }
               a {
                 span{
                   left: 2px;
@@ -701,7 +1310,6 @@ $spacefontRUS: 'Pobeda';
                 font-size:x-large;
             
               }
-              z-index: 2;
               top: 1100px;
               max-width: 250px;
               max-height: 250px;
@@ -745,6 +1353,7 @@ $spacefontRUS: 'Pobeda';
             animation-fill-mode: forwards !important;
         }
         .saturn-ring2{
+          z-index: -1;
           position: relative;
           top: 520px;
           left: 95px;
@@ -766,6 +1375,93 @@ $spacefontRUS: 'Pobeda';
           animation-fill-mode: forwards !important;
       }
       .uranus{
+        .infouranus {
+          position: fixed;
+          top: 0;
+          right: -700px;
+          width: 600px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.9);
+          transition: right 0.6s;
+          z-index: 999;
+          color: black;
+          padding: 10px;
+          overflow-y: auto;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+          &.open {
+              right: 0;
+          }
+          #closeinfo {
+            border: 1px solid white;
+            text-align: center;
+            width: 110px;
+            font-family: 'Pobeda';
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 25px;
+            position: relative;
+            transition: all 0.5s;
+            padding: 0 15px;
+            top: -10px;
+            cursor: pointer;
+    
+            &:hover {
+                color: black;
+                text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: white;
+                border: 1px solid black;
+            }
+        }
+          #editTextBtn{
+            display: none;
+            border: 1px solid white;
+            text-align: center;
+            width: 50px;
+            font-family: 'Pobeda';
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 35px;
+            font-size: 25px;
+            position: relative;
+            transition: all 0.5s;
+            padding: 0 10px;
+            top: -10px;
+            cursor: pointer;
+            &:hover {
+                color: black;
+                text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+                background-color: white;
+                border: 1px solid black;
+          }
+      
+        }
+        #saveTextBtn{
+          display: none;
+          border: 1px solid white;
+          text-align: center;
+          width: 150px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 10px;
+          top: -10px;
+          cursor: pointer;
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+        }
+      }
+         
+        }
+        
         a {
           span{
             left: 2px;
@@ -862,6 +1558,92 @@ $spacefontRUS: 'Pobeda';
         inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 225, 230, 0.322);
     }
     .neptune{
+      .infoneptune {
+        position: fixed;
+        top: 0;
+        right: -700px;
+        width: 600px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        transition: right 0.6s;
+        z-index: 999;
+        color: black;
+        padding: 10px;
+        overflow-y: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+        &.open {
+            right: 0;
+        }
+      
+        #closeinfo {
+          border: 1px solid white;
+          text-align: center;
+          width: 110px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 15px;
+          top: -10px;
+          cursor: pointer;
+  
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+          }
+      }
+        #editTextBtn{
+          display: none;
+          border: 1px solid white;
+          text-align: center;
+          width: 50px;
+          font-family: 'Pobeda';
+          color: #ffffff;
+          text-decoration: none;
+          margin: 0 35px;
+          font-size: 25px;
+          position: relative;
+          transition: all 0.5s;
+          padding: 0 10px;
+          top: -10px;
+          cursor: pointer;
+          &:hover {
+              color: black;
+              text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+              background-color: white;
+              border: 1px solid black;
+        }
+    
+      }
+      #saveTextBtn{
+        display: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 150px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 10px;
+        top: -10px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+      }
+    }
+      }
       a {
         span{
           left: 2px;
@@ -958,6 +1740,92 @@ $spacefontRUS: 'Pobeda';
       inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 104, 230, 0.322);
   }
   .sun{
+    .infosun {
+      position: fixed;
+      top: 0;
+      right: -700px;
+      width: 600px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      transition: right 0.6s;
+      z-index: 999;
+      color: black;
+      padding: 10px;
+      overflow-y: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+      &.open {
+          right: 0;
+      }
+    
+      #closeinfo {
+        border: 1px solid white;
+        text-align: center;
+        width: 110px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 15px;
+        top: -10px;
+        cursor: pointer;
+
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+        }
+    }
+      #editTextBtn{
+        display: none;
+        border: 1px solid white;
+        text-align: center;
+        width: 50px;
+        font-family: 'Pobeda';
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 35px;
+        font-size: 25px;
+        position: relative;
+        transition: all 0.5s;
+        padding: 0 10px;
+        top: -10px;
+        cursor: pointer;
+        &:hover {
+            color: black;
+            text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+            background-color: white;
+            border: 1px solid black;
+      }
+  
+    }
+    #saveTextBtn{
+      display: none;
+      border: 1px solid white;
+      text-align: center;
+      width: 150px;
+      font-family: 'Pobeda';
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 35px;
+      font-size: 25px;
+      position: relative;
+      transition: all 0.5s;
+      padding: 0 10px;
+      top: -10px;
+      cursor: pointer;
+      &:hover {
+          color: black;
+          text-shadow: 0 0 4px rgba(255, 255, 255, 1);
+          background-color: white;
+          border: 1px solid black;
+    }
+  }
+    }
     a {
       span{
         left: 2px;
@@ -1056,4 +1924,185 @@ $spacefontRUS: 'Pobeda';
 }
   }
 
+
+  @media only screen and (max-width: 1024px) {
+    body,html{
+      height: 1600px;
+      width: 110%;
+    .planets{
+      a{
+        left: 5px !important;
+        top: 125px !important;
+        width: 50px !important;
+        font-size: 15px !important;
+        height: 1px !important;
+      span{
+        left: -7px !important;
+        top: -7px !important;
+      }
+      }
+      p{
+        font-size: 20px !important;
+        top: -50px !important;
+        left: 25px !important;
+      }
+  .earth{
+    .infoearth{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    width: 120px !important;
+    height: 120px !important;
+    left: -230px !important;
+    top: 20px !important;
+  }
+  .clouds{
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 20px !important;
+  }
+  .moon{
+    .infomoon{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 20px !important;
+  }
+  .mars{
+    .infomars{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 250px !important;
+  }
+  .mercury{
+    .infomercury{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 250px !important;
+    .txtmercury{
+      left: 5px !important;
+      width: 150px !important;
+    }
+  }
+  .venus{
+    .infovenus{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 500px !important;
+    .txtvenus{
+      left: 20px !important;
+      width: 150px !important;
+    }
+  }
+  .jupiter{
+    .infojupiter{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 500px !important;
+    .txtjupiter{
+      left: 20px !important;
+      width: 150px !important;
+    }
+  }
   
+  .saturn{
+    .infosaturn{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 750px !important;
+    .txtsaturn{
+      left: 20px !important;
+      width: 150px !important;
+    }
+  }
+  .saturn-ring{
+    display: none;
+  }
+  .saturn-ring2{
+   display: none;
+  }
+  .uranus{
+    .infouranus{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 750px !important;
+  }
+  .neptune{
+    .infoneptune{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 1000px !important;
+    .txtneptune{
+      left: 20px !important;
+      width: 150px !important;
+    }
+  }
+  .sun{
+    .infosun{
+      width: 300px !important;
+      img{
+        width: 260px !important;
+      }
+    }
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 1000px !important;
+    .txtsun{
+      left: 20px !important;
+      width: 150px !important;
+    }
+  }
+  }
+}
+  }

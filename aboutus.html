@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коосмоскоп</title>
+    <link rel="stylesheet" href=".../../stylecss/style.css">
+    <link rel="stylesheet" href=".../../stylecss/loader.css">
+    <link rel="stylesheet" href=".../../stylecss/modal.css">
+    <link rel="stylesheet" href=".../../stylecss/unload.css">
+    <link rel="stylesheet" href=".../../stylecss/articlexxx.css">
+    <link rel="stylesheet" href=".../../stylecss/aboutus.css">
+    <link rel="icon" href=".../../video.image/ico.png" type="image/x-icon">
+    <script src="https://cdn.tiny.cloud/1/vhfmjm3bs97n7oxwzeud8az301nndi19epf451dg13pjxdi3/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script></head>
+    <script type="module" src="src/firebaseauth.js"></script>
+    <script type="module" src="src/loguser.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo" src=".../../video.image/logo.png" alt="Логотип Космоскоп">
+        <h1>Добро пожаловать на Космоскоп</h1>
+    </header>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="#">О нас</a>
+        <a href="./articles/article.html">Статьи</a>
+        <a id="addarticle" href="./articles/newarticle.html"  style = "display:none;"> add/editing article</a>
+        <div>
+            <a id="regbtn" href="#">Регистрация</a>
+        </div>
+        <div><span id="loggedUserFName"></span></div>
+        <button id="logout" style="display: none;">Выйти</button>
+     </nav>
+
+     <div class="modal" id="registrationForm">
+        <div class="cardreg">
+            <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+            <a class="signup">Sign Up</a>
+            <div class="inputBox1">
+                <input id="rEmail" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="fName" type="text" required="required">
+                <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="rPassword" type="password" required="required" autocomplete="new-password">
+                <span>Password</span>
+            </div>
+
+            <button id="sumbitSignUp" class="enter">Enter</button>
+
+            <span class="close">&times;</span>
+            <div class="switch">
+                <p>Already have an account?</p>
+                <button class="switchBtn">Login</button>
+            </div>
+        </div>
+     </div>
+
+      <div class="modal" id="loginForm" style="display: none;">
+        <div class="cardreg">
+            <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+            <a class="alog">Login</a>
+            <div class="inputBox">
+                <input id="email" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="password" type="password" required="required">
+                <span>Password</span>
+            </div>
+
+            <button id="sumbitSignIn" class="enter">Enter</button>
+
+            <span class="close">&times;</span>
+
+            <div class="switch">
+                <p>Don't have an account yet?</p>
+                <button class="switchBtn">Sign Up</button>
+            </div>
+        </div>
+        </div>
+
+        <div class="board">
+            <p>Добро пожаловать на наш сайт, посвященный чудесам и тайнам космоса! Мы – команда энтузиастов, которые неравнодушны к вопросам о Вселенной, звездах, планетах и всем, что находится за пределами нашего маленького голубого шара.</p> 
+            <h2>Наша миссия</h2> 
+            <p>Нашей миссией является предоставление достоверной и увлекательной информации о космосе. Мы стремимся пробудить интерес к астрономии и научным открытиям, вдохновляя людей всех возрастов на изучение Вселенной. Мы верим, что каждый имеет право знать о том, что находится за пределами нашей планеты, и стремимся сделать эту информацию доступной и понятной.</p>
+            <h2>Что мы предлагаем?</h2>
+            <p>На нашем сайте вы найдете:</p>
+            <ul>
+                <li>Статьи о последних научных открытиях и исследованиях в области астрономии.</li> 
+                <li>Обзоры планет, звезд, галактик и других космических объектов.</li>
+                <li>Интересные факты и теории о происхождении и будущем Вселенной.</li>
+                <li>Интервью с учеными и экспертами в области космических исследований.</li> 
+                <li>Образовательные материалы для школьников и студентов, увлеченных астрономией.</li>
+            </ul>
+             <h2>Наши ценности</h2>
+                   <p>Мы придерживаемся принципов точности, объективности и научной честности. Каждая статья на нашем сайте проходит тщательную проверку, чтобы обеспечить максимально точную информацию. Мы также стремимся быть вдохновляющими и увлекательными, делая науку доступной и интересной для всех.</p>
+                       <h2>Присоединяйтесь к нам</h2> 
+                       <p>Мы рады видеть вас среди наших читателей и надеемся, что наш сайт станет для вас источником знаний и вдохновения. Если у вас есть вопросы, предложения или вы хотели бы поделиться своей историей, свяжитесь с нами через нашу контактную форму. Давайте вместе откроем тайны космоса!</p> 
+              <p>С наилучшими пожеланиями,<br>Команда космического сайта</p>
+        </div>
+
+
+        
+       
+        
+        <script src="src/index.js"></script>
+    </body>
+</html>

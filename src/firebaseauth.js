@@ -51,7 +51,16 @@ signUp.addEventListener("click", (event) => {
     showMessage("Please fill in all fields", "signUpMessage");
     return;
   }
+  function openLoginForm() {
+    const registrationForm = document.getElementById("registrationForm");
+    const loginForm = document.getElementById("loginForm");
 
+    registrationForm.style.display = "none";
+    loginForm.style.display = "flex";
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+  }
   const auth = getAuth();
   const db = getFirestore();
 
@@ -67,6 +76,7 @@ signUp.addEventListener("click", (event) => {
       setDoc(docRef, userData)
         .then(() => {
           window.location.href = "#";
+          openLoginForm();
         })
         .catch((error) => {
           console.error("error writing document", error);
@@ -100,7 +110,7 @@ signIn.addEventListener("click", (event) => {
       const user = userCredential.user;
       localStorage.setItem("loggedInUserId", user.uid);
       const regbtn = document.getElementById("regbtn");
-      window.location.href = "index.html";
+      location.reload();
     })
     .catch((error) => {
       const errorCode = error.code;

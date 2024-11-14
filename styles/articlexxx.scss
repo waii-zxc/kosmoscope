@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          width: auto;
+          background-image: url(../video.image/2k_stars_milky_way.jpg);
+          background-color: rgb(34, 32, 32);
+          color: #ffffff;
+   
+    .board{
+        display: grid;
+        width: 1000px;
+        position: absolute;
+        height: auto;
+        left: 400px;
+        padding: 50px;
+        top: 200px;
+        
+        
+        background-color: rgb(34, 32, 32, 0.5);
+        p{
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h3{
+            font-family: 'Pobeda';
+            font-size: 25px;
+        }
+    }
+    footer {
+        text-align: center;
+        background-color: #191a1b;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        top:100px;
+       p{
+        letter-spacing: 5px;
+        font-size: 19px;
+       }
+    }
+    .backbttn{
+        position: relative;
+        color: white;
+        width: 70px;
+        text-align: center;
+        top: 50px;
+        left: 260px;
+        font-size: 45px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: font-size 0.3s;
+
+        &:hover{
+            font-size: 60px;
+            width: 70px;
+        }
+    }
+}
+@media only screen and (max-width: 1024px)  {
+    nav{
+        a{
+            left: -10px !important;
+        }
+    }
+.board{
+    position: relative;
+    width: auto !important;
+    height: auto !important;
+    left: 5px !important;
+}
+a{
+    position: relative !important;
+    left: 95px !important;
+    top: 10px !important;
+}
+
+}

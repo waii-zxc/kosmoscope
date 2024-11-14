@@ -4,9 +4,12 @@
   src: url(/font/ofont.ru_Pobeda.ttf);
 }
 .planets {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 200px;
   position: absolute;
   left: 250px;
-  padding: 45px;
 }
 @keyframes planetRotation {
   50% {
@@ -17,6 +20,18 @@
     background-position: 1100% 0%;
     border: 0px solid rgba(0, 0, 0, 0);
   }
+}
+.planets .planet-title {
+  font-family: "Pobeda";
+  font-size: 32px;
+}
+.planets .planet-title2 {
+  font-family: "Pobeda";
+  font-size: 24px;
+}
+.planets .planet-image {
+  width: 570px;
+  height: 350px;
 }
 .planets .earth {
   top: 100px;
@@ -37,6 +52,88 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #5e5c5c, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(0, 153, 255, 0.322);
+}
+.planets .earth .infoearth {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .earth .infoearth.open {
+  right: 0;
+}
+.planets .earth .infoearth #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .earth .infoearth #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .earth .infoearth #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .earth .infoearth #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .earth .infoearth #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .earth .infoearth #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
 }
 .planets .earth a {
   position: absolute;
@@ -144,6 +241,88 @@
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #ffffff, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(255, 255, 255, 0.3215686275);
 }
+.planets .moon .infomoon {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .moon .infomoon.open {
+  right: 0;
+}
+.planets .moon .infomoon #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .moon .infomoon #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .moon .infomoon #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .moon .infomoon #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .moon .infomoon #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .moon .infomoon #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
 .planets .moon a {
   position: absolute;
   top: 265px;
@@ -231,6 +410,88 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #a34d1b, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(238, 48, 0, 0.322);
+}
+.planets .mars .infomars {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .mars .infomars.open {
+  right: 0;
+}
+.planets .mars .infomars #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mars .infomars #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .mars .infomars #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mars .infomars #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .mars .infomars #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mars .infomars #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
 }
 .planets .mars a {
   position: absolute;
@@ -320,6 +581,88 @@
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #acabab, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(255, 255, 255, 0.3215686275);
 }
+.planets .mercury .infomercury {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .mercury .infomercury.open {
+  right: 0;
+}
+.planets .mercury .infomercury #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mercury .infomercury #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .mercury .infomercury #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mercury .infomercury #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .mercury .infomercury #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .mercury .infomercury #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
 .planets .mercury a {
   position: absolute;
   top: 265px;
@@ -407,6 +750,88 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #b87612, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(172, 103, 12, 0.322);
+}
+.planets .venus .infovenus {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .venus .infovenus.open {
+  right: 0;
+}
+.planets .venus .infovenus #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .venus .infovenus #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .venus .infovenus #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .venus .infovenus #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .venus .infovenus #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .venus .infovenus #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
 }
 .planets .venus a {
   position: absolute;
@@ -496,6 +921,88 @@
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #bea278, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(218, 187, 147, 0.322);
 }
+.planets .jupiter .infojupiter {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .jupiter .infojupiter.open {
+  right: 0;
+}
+.planets .jupiter .infojupiter #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .jupiter .infojupiter #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .jupiter .infojupiter #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .jupiter .infojupiter #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .jupiter .infojupiter #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .jupiter .infojupiter #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
 .planets .jupiter a {
   position: absolute;
   top: 265px;
@@ -564,7 +1071,6 @@
   font-size: x-large;
 }
 .planets .saturn {
-  z-index: 2;
   top: 1100px;
   max-width: 250px;
   max-height: 250px;
@@ -583,6 +1089,88 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #e9e49c, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(219, 212, 142, 0.322);
+}
+.planets .saturn .infosaturn {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .saturn .infosaturn.open {
+  right: 0;
+}
+.planets .saturn .infosaturn #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .saturn .infosaturn #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .saturn .infosaturn #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .saturn .infosaturn #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .saturn .infosaturn #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .saturn .infosaturn #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
 }
 .planets .saturn a {
   position: absolute;
@@ -674,6 +1262,7 @@
   animation-fill-mode: forwards !important;
 }
 .planets .saturn-ring2 {
+  z-index: -1;
   position: relative;
   top: 520px;
   left: 95px;
@@ -714,6 +1303,88 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #569db3, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 225, 230, 0.322);
+}
+.planets .uranus .infouranus {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .uranus .infouranus.open {
+  right: 0;
+}
+.planets .uranus .infouranus #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .uranus .infouranus #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .uranus .infouranus #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .uranus .infouranus #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .uranus .infouranus #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .uranus .infouranus #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
 }
 .planets .uranus a {
   position: absolute;
@@ -803,6 +1474,88 @@
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #413fad, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(82, 104, 230, 0.322);
 }
+.planets .neptune .infoneptune {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .neptune .infoneptune.open {
+  right: 0;
+}
+.planets .neptune .infoneptune #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .neptune .infoneptune #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .neptune .infoneptune #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .neptune .infoneptune #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .neptune .infoneptune #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .neptune .infoneptune #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
 .planets .neptune a {
   position: absolute;
   top: 265px;
@@ -891,6 +1644,88 @@
   animation-fill-mode: forwards !important;
   box-shadow: inset -10px 8px 6px -5px #aa5b00, inset 20px -20px 40px 30px rgba(0, 0, 0, 0.9), 7px -6px 14px rgba(230, 154, 82, 0.322);
 }
+.planets .sun .infosun {
+  position: fixed;
+  top: 0;
+  right: -700px;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: right 0.6s;
+  z-index: 999;
+  color: black;
+  padding: 10px;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.planets .sun .infosun.open {
+  right: 0;
+}
+.planets .sun .infosun #closeinfo {
+  border: 1px solid white;
+  text-align: center;
+  width: 110px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 15px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .sun .infosun #closeinfo:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .sun .infosun #editTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 50px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .sun .infosun #editTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
+.planets .sun .infosun #saveTextBtn {
+  display: none;
+  border: 1px solid white;
+  text-align: center;
+  width: 150px;
+  font-family: "Pobeda";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 35px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.5s;
+  padding: 0 10px;
+  top: -10px;
+  cursor: pointer;
+}
+.planets .sun .infosun #saveTextBtn:hover {
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 255, 255);
+  background-color: white;
+  border: 1px solid black;
+}
 .planets .sun a {
   position: absolute;
   top: 265px;
@@ -958,6 +1793,185 @@
   letter-spacing: 3px;
   font-family: "Pobeda";
   font-size: x-large;
+}
+
+@media only screen and (max-width: 1024px) {
+  body, html {
+    height: 1600px;
+    width: 110%;
+  }
+  body .planets a, html .planets a {
+    left: 5px !important;
+    top: 125px !important;
+    width: 50px !important;
+    font-size: 15px !important;
+    height: 1px !important;
+  }
+  body .planets a span, html .planets a span {
+    left: -7px !important;
+    top: -7px !important;
+  }
+  body .planets p, html .planets p {
+    font-size: 20px !important;
+    top: -50px !important;
+    left: 25px !important;
+  }
+  body .planets .earth, html .planets .earth {
+    width: 120px !important;
+    height: 120px !important;
+    left: -230px !important;
+    top: 20px !important;
+  }
+  body .planets .earth .infoearth, html .planets .earth .infoearth {
+    width: 300px !important;
+  }
+  body .planets .earth .infoearth img, html .planets .earth .infoearth img {
+    width: 260px !important;
+  }
+  body .planets .clouds, html .planets .clouds {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 20px !important;
+  }
+  body .planets .moon, html .planets .moon {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 20px !important;
+  }
+  body .planets .moon .infomoon, html .planets .moon .infomoon {
+    width: 300px !important;
+  }
+  body .planets .moon .infomoon img, html .planets .moon .infomoon img {
+    width: 260px !important;
+  }
+  body .planets .mars, html .planets .mars {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 250px !important;
+  }
+  body .planets .mars .infomars, html .planets .mars .infomars {
+    width: 300px !important;
+  }
+  body .planets .mars .infomars img, html .planets .mars .infomars img {
+    width: 260px !important;
+  }
+  body .planets .mercury, html .planets .mercury {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 250px !important;
+  }
+  body .planets .mercury .infomercury, html .planets .mercury .infomercury {
+    width: 300px !important;
+  }
+  body .planets .mercury .infomercury img, html .planets .mercury .infomercury img {
+    width: 260px !important;
+  }
+  body .planets .mercury .txtmercury, html .planets .mercury .txtmercury {
+    left: 5px !important;
+    width: 150px !important;
+  }
+  body .planets .venus, html .planets .venus {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 500px !important;
+  }
+  body .planets .venus .infovenus, html .planets .venus .infovenus {
+    width: 300px !important;
+  }
+  body .planets .venus .infovenus img, html .planets .venus .infovenus img {
+    width: 260px !important;
+  }
+  body .planets .venus .txtvenus, html .planets .venus .txtvenus {
+    left: 20px !important;
+    width: 150px !important;
+  }
+  body .planets .jupiter, html .planets .jupiter {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 500px !important;
+  }
+  body .planets .jupiter .infojupiter, html .planets .jupiter .infojupiter {
+    width: 300px !important;
+  }
+  body .planets .jupiter .infojupiter img, html .planets .jupiter .infojupiter img {
+    width: 260px !important;
+  }
+  body .planets .jupiter .txtjupiter, html .planets .jupiter .txtjupiter {
+    left: 20px !important;
+    width: 150px !important;
+  }
+  body .planets .saturn, html .planets .saturn {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 750px !important;
+  }
+  body .planets .saturn .infosaturn, html .planets .saturn .infosaturn {
+    width: 300px !important;
+  }
+  body .planets .saturn .infosaturn img, html .planets .saturn .infosaturn img {
+    width: 260px !important;
+  }
+  body .planets .saturn .txtsaturn, html .planets .saturn .txtsaturn {
+    left: 20px !important;
+    width: 150px !important;
+  }
+  body .planets .saturn-ring, html .planets .saturn-ring {
+    display: none;
+  }
+  body .planets .saturn-ring2, html .planets .saturn-ring2 {
+    display: none;
+  }
+  body .planets .uranus, html .planets .uranus {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 750px !important;
+  }
+  body .planets .uranus .infouranus, html .planets .uranus .infouranus {
+    width: 300px !important;
+  }
+  body .planets .uranus .infouranus img, html .planets .uranus .infouranus img {
+    width: 260px !important;
+  }
+  body .planets .neptune, html .planets .neptune {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -230px !important;
+    top: 1000px !important;
+  }
+  body .planets .neptune .infoneptune, html .planets .neptune .infoneptune {
+    width: 300px !important;
+  }
+  body .planets .neptune .infoneptune img, html .planets .neptune .infoneptune img {
+    width: 260px !important;
+  }
+  body .planets .neptune .txtneptune, html .planets .neptune .txtneptune {
+    left: 20px !important;
+    width: 150px !important;
+  }
+  body .planets .sun, html .planets .sun {
+    max-width: 120px !important;
+    max-height: 120px !important;
+    left: -45px !important;
+    top: 1000px !important;
+  }
+  body .planets .sun .infosun, html .planets .sun .infosun {
+    width: 300px !important;
+  }
+  body .planets .sun .infosun img, html .planets .sun .infosun img {
+    width: 260px !important;
+  }
+  body .planets .sun .txtsun, html .planets .sun .txtsun {
+    left: 20px !important;
+    width: 150px !important;
+  }
 }
 
 /*# sourceMappingURL=planet.css.map */

@@ -1,41 +1,46 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
-@font-face {
-  font-family: "Pobeda";
-  src: url(/font/ofont.ru_Pobeda.ttf);
-}
-@keyframes slideInRight {
+@keyframes slideInDown {
   from {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
-body, html {
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 2300px;
+  width: 100%;
+  background-image: url(../video.image/2k_stars_milky_way.jpg);
   background-color: rgb(34, 32, 32);
   color: #ffffff;
-  overflow: hidden;
 }
-body h1, html h1 {
+body button {
+  cursor: pointer;
+}
+body h1 {
   font-family: "Pobeda";
 }
-body .milky-way, html .milky-way {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 2120px;
+body h2 {
+  font-family: "Pobeda";
 }
-body header, html header {
+body header {
   background-color: #161616;
   padding: 10px;
   text-align: center;
 }
-body header a, html header a {
+body header a {
   font-family: "Pobeda";
 }
-body header #logo, html header #logo {
+body header #logo {
   position: absolute;
   cursor: pointer;
   animation: bounce 0.5s;
@@ -45,16 +50,17 @@ body header #logo, html header #logo {
   left: 25px;
   transition: transform 0.5s;
 }
-body nav, html nav {
+body nav {
   background-color: #111111;
   text-align: center;
   padding: 15px;
+  overflow-x: hidden;
 }
-body nav #logout, html nav #logout {
+body nav #logout {
   z-index: 1;
   position: absolute;
-  top: 108px;
-  left: 93%;
+  top: 150px;
+  left: 87.3%;
   color: white;
   background-color: black;
   font-family: "Pobeda";
@@ -65,14 +71,15 @@ body nav #logout, html nav #logout {
   max-width: 900px;
   cursor: pointer;
   transition: all 0.5s;
-  animation: slideInRight 0.5s ease;
+  animation: slideInDown 0.5s ease;
+  margin: 0 40px;
 }
-body nav #logout:hover, html nav #logout:hover {
+body nav #logout:hover {
   color: black;
   text-shadow: 0 0 4px rgb(255, 255, 255);
   background-color: white;
 }
-body nav #loggedUserFName, html nav #loggedUserFName {
+body nav #loggedUserFName {
   position: absolute;
   top: 110px;
   left: 89%;
@@ -85,20 +92,21 @@ body nav #loggedUserFName, html nav #loggedUserFName {
   max-width: 900px;
   cursor: pointer;
   transition: all 0.5s;
+  padding: 0 10px;
 }
-body nav #loggedUserFName:hover, html nav #loggedUserFName:hover {
+body nav #loggedUserFName:hover {
   color: black;
   text-shadow: 0 0 4px rgb(255, 255, 255);
   background-color: white;
 }
-body nav #regbtn, html nav #regbtn {
+body nav #regbtn {
   position: absolute;
   display: inline-block;
   left: 85%;
   top: 110px;
   width: 100px;
 }
-body nav a, html nav a {
+body nav a {
   border: 1px solid white;
   text-align: center;
   width: 110px;
@@ -111,25 +119,87 @@ body nav a, html nav a {
   transition: all 0.5s;
   padding: 0 15px;
 }
-body nav a:hover, html nav a:hover {
+body nav a:hover {
   color: black;
   text-shadow: 0 0 4px rgb(255, 255, 255);
   background-color: white;
 }
-body footer, html footer {
-  position: fixed;
-  z-index: 12;
-  background-color: #111111;
+body footer {
   text-align: center;
-  padding: 10px;
+  background-color: #191a1b;
+  padding: 10px 0;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  max-height: 70px;
 }
-body footer p, html footer p {
+body footer p {
   letter-spacing: 5px;
   font-size: 19px;
   font-family: "Pobeda";
+}
+
+@media only screen and (max-width: 1024px) {
+  body header {
+    width: 110% !important;
+  }
+  body img {
+    width: 130px;
+    height: 100px !important;
+    top: -2px !important;
+    left: -25px !important;
+  }
+  body .modal .cardreg {
+    left: 85px;
+    top: 220px;
+    width: 300px;
+    height: 600px;
+  }
+  body .modal .cardreg p {
+    top: 35px;
+    left: 30px;
+  }
+  body .modal a {
+    font-size: 25px !important;
+  }
+  body h1 {
+    position: relative;
+    font-size: 25px;
+    top: 10px;
+    left: 10px;
+  }
+  body header {
+    width: auto !important;
+  }
+  body nav {
+    width: auto !important;
+  }
+  body nav a {
+    position: relative;
+    left: -25px;
+    margin: 5px;
+    width: 45px;
+    font-size: 18px;
+  }
+  body nav #loggedUserFName {
+    left: 15px;
+    top: 150px;
+  }
+  body nav #logout {
+    left: 65px;
+    top: 150px;
+  }
+  body nav #regbtn {
+    font-size: 17px;
+    width: 60px;
+    top: 90px;
+    left: 75%;
+  }
+  body nav #addarticle {
+    margin: 0;
+  }
+  footer {
+    width: 110% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,10 +32,17 @@ const db = getFirestore();
 
 onAuthStateChanged(auth, (user) => {
   const loggedInUserId = localStorage.getItem("loggedInUserId");
+
   if (loggedInUserId) {
     const docRef = doc(db, "users", loggedInUserId);
     getDoc(docRef)
       .then((docSnap) => {
+        if (user) {
+          checkUserRole(user);
+        } else {
+          hideEditButtons();
+        }
+
         if (docSnap.exists()) {
           const userData = docSnap.data();
           document.getElementById("loggedUserFName").innerText =
@@ -48,7 +55,8 @@ onAuthStateChanged(auth, (user) => {
         console.log("Error getting element");
       });
   } else {
-    console.log("User Id not Found in local storage");
+    hideEditButtons();
+    console.log("Пользователь не вошел в систему");
   }
 });
 
@@ -58,9 +66,78 @@ logoutButton.addEventListener("click", () => {
   localStorage.removeItem("loggedInUserId");
   signOut(auth)
     .then(() => {
-      window.location.href = "index.html";
+      location.reload();
     })
     .catch((error) => {
       console.log("Error Signing out:", error);
     });
 });
+
+function checkUserRole(user) {
+  if (user) {
+    const db = getFirestore();
+    const userRef = doc(db, "users", user.uid);
+
+    getDoc(userRef)
+      .then((doc) => {
+        if (doc.exists()) {
+          const userData = doc.data();
+          if (userData.role === "admin") {
+            showEditButtons();
+            showAddArticle();
+          } else {
+            console.log("У вас нет прав администратора.");
+            hideEditButtons();
+            hideAddArticle();
+          }
+        } else {
+          console.log("Данные пользователя не найдены.");
+          hideEditButtons();
+          hideAddArticle();
+        }
+      })
+      .catch((error) => {
+        console.error("Ошибка при получении данных пользователя:", error);
+        hideEditButtons();
+        hideAddArticle();
+      });
+  }
+}
+
+function showEditButtons() {
+  const elements = document.querySelectorAll('[id^="info"]');
+  elements.forEach((element) => {
+    const editTextBtn = element.querySelector("#editTextBtn");
+    const saveTextBtn = element.querySelector("#saveTextBtn");
+    if (editTextBtn && saveTextBtn) {
+      editTextBtn.style.display = "inline";
+      saveTextBtn.style.display = "inline";
+    }
+  });
+}
+
+function hideEditButtons() {
+  const elements = document.querySelectorAll('[id^="info"]');
+  elements.forEach((element) => {
+    const editTextBtn = element.querySelector("#editTextBtn");
+    const saveTextBtn = element.querySelector("#saveTextBtn");
+    if (editTextBtn && saveTextBtn) {
+      editTextBtn.style.display = "none";
+      saveTextBtn.style.display = "none";
+    }
+  });
+}
+
+function showAddArticle() {
+  const addArticleLink = document.getElementById("addarticle");
+  if (addArticleLink) {
+    addArticleLink.style.display = "inline";
+  }
+}
+
+function hideAddArticle() {
+  const addArticleLink = document.getElementById("addarticle");
+  if (addArticleLink) {
+    addArticleLink.style.display = "none";
+  }
+}

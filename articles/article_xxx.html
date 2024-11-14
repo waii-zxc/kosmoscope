@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коосмоскоп</title>
+    <link rel="stylesheet" href="../stylecss/style.css">
+    <link rel="stylesheet" href="../stylecss/loader.css">
+    <link rel="stylesheet" href="../stylecss/modal.css">
+    <link rel="stylesheet" href="../stylecss/unload.css">
+    <link rel="stylesheet" href="../stylecss/articlexxx.css">
+    <link rel="icon" href="../video.image/ico.png" type="image/x-icon">
+    <script src="https://cdn.tiny.cloud/1/vhfmjm3bs97n7oxwzeud8az301nndi19epf451dg13pjxdi3/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script></head>
+    <script type="module" src="../src/firebaseauth.js"></script>
+    <script type="module" src="../src/loguser.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo" src="../video.image/logo.png" alt="Логотип Космоскоп">
+        <h1>Добро пожаловать на Космоскоп</h1>
+    </header>
+    <nav>
+        <a href="../index.html">Главная</a>
+        <a href="#">О нас</a>
+        <a href="article.html">Статьи</a>
+        <a id="addarticle" href="../articles/newarticle.html" style = "display:none;"> add/editing article</a>
+        <div>
+            <a id="regbtn" href="#">Регистрация</a>
+        </div>
+        <div><span id="loggedUserFName"></span></div>
+        <button id="logout" style="display: none;">Выйти</button>
+     </nav>
+
+     <div class="modal" id="registrationForm">
+        <div class="cardreg">
+            <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+            <a class="signup">Sign Up</a>
+            <div class="inputBox1">
+                <input id="rEmail" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="fName" type="text" required="required">
+                <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="rPassword" type="password" required="required" autocomplete="new-password">
+                <span>Password</span>
+            </div>
+
+            <button id="sumbitSignUp" class="enter">Enter</button>
+
+            <span class="close">&times;</span>
+            <div class="switch">
+                <p>Already have an account?</p>
+                <button class="switchBtn">Login</button>
+            </div>
+        </div>
+     </div>
+
+      <div class="modal" id="loginForm" style="display: none;">
+        <div class="cardreg">
+            <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+            <a class="alog">Login</a>
+            <div class="inputBox">
+                <input id="email" type="email" required="required">
+                <span class="user">Email</span>
+            </div>
+
+            <div class="inputBox">
+                <input id="password" type="password" required="required">
+                <span>Password</span>
+            </div>
+
+            <button id="sumbitSignIn" class="enter">Enter</button>
+
+            <span class="close">&times;</span>
+
+            <div class="switch">
+                <p>Don't have an account yet?</p>
+                <button class="switchBtn">Sign Up</button>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="board">
+        <div id="content-container"></div>
+        </div>
+        <a class="backbttn" href="./article.html">&#10550;</a>
+
+
+        
+        
+        <script type="module" src="../src/unloadarticle.js"></script>
+        <script src="../src/index.js"></script>
+ </body>
+    
+</html>
