@@ -42,7 +42,8 @@ body {
       cursor: pointer;
       border: 1px solid white;
       background-color: black;
-      top: 10px;
+      top: 540px;
+      left: 175px;
 
       &:hover {
         color: black;
@@ -50,6 +51,10 @@ body {
         background-color: white;
 
       }
+    }
+    img{
+      top: 250px;
+      left: 20px;
     }
 
   }
@@ -182,20 +187,24 @@ nav {
   height: 182px !important;
   img{
     position: relative;
-    top: -40px !important;
+    top: 110px !important;
     left: 1.5px !important;
+    width: 110px !important;
+    height: 70px !important;
   }
   h1{
     position: relative;
     font-size: 20px !important;
     left: -25px !important;
     top: -30px !important;
+    font-size: 15px !important;
   }
   .more-button{
     width: 60px !important;
     height: 30px !important;
     font-size: 15px !important;
-    top: -35px !important;
+    top: 195px !important;
+    left: 25px !important;
     span{
       position: relative;
       left: -7px !important;

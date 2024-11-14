@@ -33,10 +33,10 @@ window.onload = function () {
       cardElement.setAttribute("data-id", doc.id);
       cardElement.setAttribute("data-title", cardData.title.toLowerCase());
       cardElement.innerHTML = `
-        <div class="cardcard" style="border: 1px solid white; padding: 20px; text-align: center; width: 500px; height: 600px; margin: 25px auto;">
+        <div class="cardcard" style="border: 1px solid white; padding: 20px; text-align: center; width: 500px; height: 600px; margin: 25px auto; position: relative;">
           <h1>${cardData.title}</h1>
-          <img src="${cardData.image}" alt="Изображение" style="max-width: 100%; height: 280px;">
-          <button class="more-button" style="display: block; margin: 10px auto;"><span>Подробнее</span></button>
+          <img src="${cardData.image}" alt="Изображение" style="max-width: 100%; height: 280px; position: absolute;">
+          <button class="more-button" style="display: block; margin: 10px auto; position: absolute;"><span>Подробнее</span></button>
         </div>
       `;
 

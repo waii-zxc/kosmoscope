@@ -34,6 +34,12 @@ body .board h3 {
   font-family: "Pobeda";
   font-size: 25px;
 }
+body .board a {
+  color: lightblue;
+}
+body .board ul {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 body footer {
   text-align: center;
   background-color: #191a1b;
