@@ -178,13 +178,12 @@ body footer p {
   body .cardcard .more-button {
     width: 60px !important;
     height: 30px !important;
-    font-size: 15px !important;
+    font-size: 9px !important;
     top: 195px !important;
     left: 25px !important;
   }
   body .cardcard .more-button span {
     position: relative;
-    left: -7px !important;
   }
   body footer {
     width: 100% !important;
