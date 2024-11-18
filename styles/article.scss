@@ -206,11 +206,16 @@ nav {
     font-size: 9px !important;
     top: 195px !important;
     left: 25px !important;
-    span{
-      position: relative;
-      
-    }
+   
   }
+  #contstars{
+    top: 180px !important;
+    left: 33px !important;
+     .star{
+      font-size: 10px !important;
+     }
+  }
+ 
 }
 footer{
      

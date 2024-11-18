@@ -182,8 +182,12 @@ body footer p {
     top: 195px !important;
     left: 25px !important;
   }
-  body .cardcard .more-button span {
-    position: relative;
+  body .cardcard #contstars {
+    top: 180px !important;
+    left: 33px !important;
+  }
+  body .cardcard #contstars .star {
+    font-size: 10px !important;
   }
   body footer {
     width: 100% !important;
