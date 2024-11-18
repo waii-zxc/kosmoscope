@@ -43,7 +43,7 @@ window.onload = function () {
             cardData.image
           }" alt="Изображение" style="max-width: 100%; height: 280px; position: absolute;">
           <button class="more-button" style="display: block; margin: 10px auto; position: absolute;"><span>Подробнее</span></button>
-          <div id="contstars" class="stars-container" style="position: absolute; top:650px; cursor:pointer;">${generateStars(
+          <div id="contstars" class="stars-container" style="position: absolute; top:650px; cursor:pointer; display:none;">${generateStars(
             5,
             cardData.averageRating
           )}</div>
@@ -166,6 +166,7 @@ window.onload = function () {
       imageElement.src = cardData.image;
       imageElement.alt = "Изображение";
       imageElement.style.maxWidth = "100%";
+      // imageElement.style.marginLeft = "-10px";
       imageElement.style.height = "auto";
 
       const textContent = document.createElement("div");
