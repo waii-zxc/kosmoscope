@@ -13,7 +13,7 @@ import {
   onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyAbxtQo48q9wjb7nSbUQgxcFiXjtZ7YTdQ",
   authDomain: "walhalla-b4641.firebaseapp.com",
@@ -63,7 +63,7 @@ async function loadCards(currentUser) {
           cardData.image
         }" alt="Изображение" style="max-width: 100%; height: 280px; position: absolute;">
         <button class="more-button" style="display: block; margin: 10px auto; position: absolute;"><span>Подробнее</span></button>
-        <div id="contstars" class="stars-container" style=" position: absolute; top:615px; cursor:pointer;">${generateStars(
+        <div id="contstars" class="stars-container" style="position: absolute; top:615px; cursor:pointer;">${generateStars(
           5,
           cardData.averageRating
         )}</div>
@@ -79,30 +79,61 @@ async function loadCards(currentUser) {
     }
 
     const starsContainer = cardElement.querySelector("#contstars");
-    starsContainer.addEventListener("click", async (event) => {
-      if (event.target.classList.contains("star")) {
-        if (currentUser && (await canRateArticle(doc.id, currentUser))) {
-          const clickedStar = event.target;
-          const stars = Array.from(starsContainer.children);
-          const clickedIndex = stars.indexOf(clickedStar);
-          const rating = clickedIndex + 1;
-
-          stars.forEach((star, index) => {
-            if (index <= clickedIndex) {
-              star.innerHTML = "&#9733;"; // Заполненная звезда
-            } else {
-              star.innerHTML = "&#9734;"; // Пустая звезда
-            }
-          });
-
-          await updateRating(doc.id, currentUser, rating);
-        } else {
-          alert("Вы уже оценили эту статью или не вошли в систему.");
-        }
-      }
-    });
+    starsContainer.innerHTML = generateStars(5, cardData.averageRating);
+    attachStarEvents(starsContainer, currentUser, doc.id);
 
     cardsContainer.appendChild(cardElement);
+  });
+}
+
+function generateStars(maxStars, averageRating) {
+  let starsHtml = "";
+  for (let i = 1; i <= maxStars; i++) {
+    if (i <= averageRating) {
+      starsHtml += '<span class="star" style="color: #f6fa00;">&#9733;</span>';
+    } else {
+      starsHtml += '<span class="star" style="color: #f6fa00;">&#9734;</span>';
+    }
+  }
+  return starsHtml;
+}
+
+function attachStarEvents(starsContainer, currentUser, docId) {
+  const stars = Array.from(starsContainer.children);
+
+  stars.forEach((star, index) => {
+    star.addEventListener("mouseenter", () => {
+      stars.forEach((s, i) => {
+        s.innerHTML = i <= index ? "&#9733;" : "&#9734;";
+        if (i <= index) s.style.color = "#f6fa00";
+      });
+    });
+
+    star.addEventListener("mouseleave", () => {
+      stars.forEach((s, i) => {
+        const rating = s.dataset.rating || 0;
+        s.innerHTML = i < rating ? "&#9733;" : "&#9734;";
+        if (i < rating) s.style.color = "#f6fa00";
+      });
+    });
+
+    star.addEventListener("click", async () => {
+      if (currentUser && (await canRateArticle(docId, currentUser))) {
+        const rating = index + 1;
+        stars.forEach((s, i) => {
+          if (i <= index) {
+            s.innerHTML = "&#9733;";
+            s.style.color = "#f6fa00";
+          } else {
+            s.innerHTML = "&#9734;";
+          }
+          s.dataset.rating = rating;
+        });
+        await updateRating(docId, currentUser, rating);
+      } else {
+        alert("Вы уже оценили эту статью или не вошли в систему.");
+      }
+    });
   });
 }
 
@@ -112,27 +143,9 @@ async function canRateArticle(articleId, userId) {
 
   if (articleDoc.exists()) {
     const articleData = articleDoc.data();
-
-    if (!articleData.ratedBy) {
-      return true;
-    } else {
-      return !articleData.ratedBy.includes(userId);
-    }
+    return !articleData.ratedBy || !articleData.ratedBy.includes(userId);
   }
-
   return false;
-}
-
-function generateStars(maxStars, averageRating) {
-  let starsHtml = "";
-  for (let i = 1; i <= maxStars; i++) {
-    if (i <= averageRating) {
-      starsHtml += '<span class="star" style="color:#f6fa00";>&#9733;</span>';
-    } else {
-      starsHtml += '<span class="star">&#9734;</span>';
-    }
-  }
-  return starsHtml;
 }
 
 async function updateRating(docId, userId, rating) {

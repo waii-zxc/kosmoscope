@@ -17,6 +17,9 @@ body #cards-container {
   align-content: flex-start;
   top: 50px;
 }
+body #cards-container .star {
+  color: white;
+}
 body #cards-container h1 {
   margin: 30px;
   font-size: 76px;
