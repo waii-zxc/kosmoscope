@@ -99,6 +99,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -121,6 +122,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -289,6 +291,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -311,6 +314,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -438,6 +442,7 @@
   width: 110px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -460,6 +465,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -482,6 +488,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -632,6 +639,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -654,6 +662,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -804,6 +813,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -826,6 +836,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -976,6 +987,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -998,6 +1010,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1124,6 +1137,7 @@
   width: 110px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1146,6 +1160,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1168,6 +1183,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1339,6 +1355,7 @@
   width: 110px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1361,6 +1378,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1383,6 +1401,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1510,6 +1529,7 @@
   width: 110px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1532,6 +1552,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1554,6 +1575,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1704,6 +1726,7 @@
   width: 50px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1726,6 +1749,7 @@
   width: 150px;
   font-family: "Pobeda";
   color: #ffffff;
+  background-color: black;
   text-decoration: none;
   margin: 0 35px;
   font-size: 25px;
@@ -1845,6 +1869,11 @@
   }
   body .planets .earth .infoearth img, html .planets .earth .infoearth img {
     width: 260px !important;
+  }
+  body .planets .earth .infoearth #closeinfo, html .planets .earth .infoearth #closeinfo {
+    top: -15px !important;
+    padding: 0 55px !important;
+    text-align: center;
   }
   body .planets .clouds, html .planets .clouds {
     max-width: 120px !important;
