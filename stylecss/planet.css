@@ -136,9 +136,7 @@
   border: 1px solid black;
 }
 .planets .earth a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -187,10 +185,13 @@
   z-index: 3;
 }
 .planets .earth button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .earth .txtearth {
   position: absolute;
@@ -324,9 +325,7 @@
   border: 1px solid black;
 }
 .planets .moon a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -375,10 +374,13 @@
   z-index: 3;
 }
 .planets .moon button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .moon .txtmoon {
   position: absolute;
@@ -494,9 +496,7 @@
   border: 1px solid black;
 }
 .planets .mars a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -545,10 +545,13 @@
   z-index: 3;
 }
 .planets .mars button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 46px;
 }
 .planets .mars .txtmars {
   position: absolute;
@@ -664,9 +667,7 @@
   border: 1px solid black;
 }
 .planets .mercury a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -715,10 +716,13 @@
   z-index: 3;
 }
 .planets .mercury button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 46px;
 }
 .planets .mercury .txtmercury {
   position: absolute;
@@ -834,9 +838,7 @@
   border: 1px solid black;
 }
 .planets .venus a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -885,10 +887,13 @@
   z-index: 3;
 }
 .planets .venus button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 46px;
 }
 .planets .venus .txtvenus {
   position: absolute;
@@ -1004,9 +1009,7 @@
   border: 1px solid black;
 }
 .planets .jupiter a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -1055,10 +1058,13 @@
   z-index: 3;
 }
 .planets .jupiter button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .jupiter .txtjupiter {
   position: absolute;
@@ -1173,9 +1179,7 @@
   border: 1px solid black;
 }
 .planets .saturn a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -1224,10 +1228,13 @@
   z-index: 3;
 }
 .planets .saturn button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .saturn .txtsaturn {
   position: absolute;
@@ -1387,9 +1394,7 @@
   border: 1px solid black;
 }
 .planets .uranus a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -1438,10 +1443,13 @@
   z-index: 3;
 }
 .planets .uranus button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .uranus .txturanus {
   position: absolute;
@@ -1557,9 +1565,7 @@
   border: 1px solid black;
 }
 .planets .neptune a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
@@ -1608,10 +1614,13 @@
   z-index: 3;
 }
 .planets .neptune button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .neptune .txtneptune {
   position: absolute;
@@ -1727,15 +1736,12 @@
   border: 1px solid black;
 }
 .planets .sun a {
-  position: absolute;
-  top: 265px;
-  left: 46px;
+  position: relative;
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid #fefefe;
   text-transform: uppercase;
   color: #fefefe;
-  text-decoration: none;
   text-decoration: none;
   font-weight: 100;
   font-size: 24px;
@@ -1779,10 +1785,13 @@
   z-index: 3;
 }
 .planets .sun button {
+  position: relative;
   background-color: none;
   text-decoration: none;
-  background-color: #212121;
+  background-color: rgba(11, 11, 12, 0.473);
   border: none;
+  top: 265px;
+  left: 40px;
 }
 .planets .sun .txtsun {
   position: absolute;

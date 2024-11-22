@@ -132,9 +132,7 @@ $spacefontRUS: 'Pobeda';
       span{ 
         left: 2px;
       }
-      position: absolute;
-      top: 265px;
-      left: 46px;
+      position: relative;
       display: inline-block;
       padding: 15px 30px;
       border: 2px solid #fefefe;
@@ -187,10 +185,13 @@ $spacefontRUS: 'Pobeda';
     }
     
     button {
+      position: relative;
       background-color: none;
       text-decoration: none;
-      background-color: #212121;
+      background-color: rgba(11, 11, 12, 0.473);
       border: none;
+      top: 265px;
+      left: 40px;
     }
     .txtearth{
       position: absolute;
@@ -331,13 +332,10 @@ $spacefontRUS: 'Pobeda';
   }
     }
     a {
-      span{
-        
+      span{ 
         left: 2px;
       }
-      position: absolute;
-      top: 265px;
-      left: 46px;
+      position: relative;
       display: inline-block;
       padding: 15px 30px;
       border: 2px solid #fefefe;
@@ -348,8 +346,8 @@ $spacefontRUS: 'Pobeda';
       font-size: 24px;
       letter-spacing: 3px;
       font-family: 'Pobeda';
+      
     }
-    
     a::before {
       content: '';
       position: absolute;
@@ -387,12 +385,14 @@ $spacefontRUS: 'Pobeda';
       position: relative;
       z-index: 3;
     }
-    
     button {
+      position: relative;
       background-color: none;
       text-decoration: none;
-      background-color: #212121;
+      background-color: rgba(11, 11, 12, 0.473);
       border: none;
+      top: 265px;
+      left: 40px;
     }
     .txtmoon{
       position: absolute;
@@ -513,12 +513,10 @@ $spacefontRUS: 'Pobeda';
     }
       }
       a {
-        span{
+        span{ 
           left: 2px;
         }
-        position: absolute;
-        top: 265px;
-        left: 46px;
+        position: relative;
         display: inline-block;
         padding: 15px 30px;
         border: 2px solid #fefefe;
@@ -570,10 +568,13 @@ $spacefontRUS: 'Pobeda';
       }
       
       button {
+        position: relative;
         background-color: none;
         text-decoration: none;
-        background-color: #212121;
+        background-color: rgba(11, 11, 12, 0.473);
         border: none;
+        top: 265px;
+        left: 46px;
       }
       .txtmars{
         position: absolute;
@@ -694,12 +695,10 @@ $spacefontRUS: 'Pobeda';
       }
         }
         a {
-          span{
+          span{ 
             left: 2px;
           }
-          position: absolute;
-          top: 265px;
-          left: 46px;
+          position: relative;
           display: inline-block;
           padding: 15px 30px;
           border: 2px solid #fefefe;
@@ -751,10 +750,13 @@ $spacefontRUS: 'Pobeda';
         }
         
         button {
+          position: relative;
           background-color: none;
           text-decoration: none;
-          background-color: #212121;
+          background-color: rgba(11, 11, 12, 0.473);
           border: none;
+          top: 265px;
+          left: 46px;
         }
         .txtmercury{
           position: absolute;
@@ -875,12 +877,10 @@ $spacefontRUS: 'Pobeda';
         }
           }
           a {
-            span{
+            span{ 
               left: 2px;
             }
-            position: absolute;
-            top: 265px;
-            left: 46px;
+            position: relative;
             display: inline-block;
             padding: 15px 30px;
             border: 2px solid #fefefe;
@@ -932,10 +932,13 @@ $spacefontRUS: 'Pobeda';
           }
           
           button {
+            position: relative;
             background-color: none;
             text-decoration: none;
-            background-color: #212121;
+            background-color: rgba(11, 11, 12, 0.473);
             border: none;
+            top: 265px;
+            left: 46px;
           }
           .txtvenus{
             position: absolute;
@@ -1055,12 +1058,10 @@ $spacefontRUS: 'Pobeda';
           }
             }
             a {
-              span{
+              span{ 
                 left: 2px;
               }
-              position: absolute;
-              top: 265px;
-              left: 46px;
+              position: relative;
               display: inline-block;
               padding: 15px 30px;
               border: 2px solid #fefefe;
@@ -1112,10 +1113,13 @@ $spacefontRUS: 'Pobeda';
             }
             
             button {
+              position: relative;
               background-color: none;
               text-decoration: none;
-              background-color: #212121;
+              background-color: rgba(11, 11, 12, 0.473);
               border: none;
+              top: 265px;
+              left: 40px;
             }
             .txtjupiter{
               position: absolute;
@@ -1236,24 +1240,22 @@ $spacefontRUS: 'Pobeda';
               }
             }
             }
-              a {
-                span{
-                  left: 2px;
-                }
-                position: absolute;
-                top: 265px;
-                left: 46px;
-                display: inline-block;
-                padding: 15px 30px;
-                border: 2px solid #fefefe;
-                text-transform: uppercase;
-                color: #fefefe;
-                text-decoration: none;
-                font-weight: 100;
-                font-size: 24px;
-                letter-spacing: 3px;
-                font-family: 'Pobeda';
+            a {
+              span{ 
+                left: 2px;
               }
+              position: relative;
+              display: inline-block;
+              padding: 15px 30px;
+              border: 2px solid #fefefe;
+              text-transform: uppercase;
+              color: #fefefe;
+              text-decoration: none;
+              font-weight: 100;
+              font-size: 24px;
+              letter-spacing: 3px;
+              font-family: 'Pobeda';
+            }
               
               a::before {
                 content: '';
@@ -1294,10 +1296,13 @@ $spacefontRUS: 'Pobeda';
               }
               
               button {
+                position: relative;
                 background-color: none;
                 text-decoration: none;
-                background-color: #212121;
+                background-color: rgba(11, 11, 12, 0.473);
                 border: none;
+                top: 265px;
+                left: 40px;
               }
               .txtsaturn{
                 position: absolute;
@@ -1463,12 +1468,10 @@ $spacefontRUS: 'Pobeda';
         }
         
         a {
-          span{
+          span{ 
             left: 2px;
           }
-          position: absolute;
-          top: 265px;
-          left: 46px;
+          position: relative;
           display: inline-block;
           padding: 15px 30px;
           border: 2px solid #fefefe;
@@ -1518,12 +1521,14 @@ $spacefontRUS: 'Pobeda';
           position: relative;
           z-index: 3;
         }
-        
         button {
+          position: relative;
           background-color: none;
           text-decoration: none;
-          background-color: #212121;
+          background-color: rgba(11, 11, 12, 0.473);
           border: none;
+          top: 265px;
+          left: 40px;
         }
         .txturanus{
           position: absolute;
@@ -1645,12 +1650,10 @@ $spacefontRUS: 'Pobeda';
     }
       }
       a {
-        span{
+        span{ 
           left: 2px;
         }
-        position: absolute;
-        top: 265px;
-        left: 46px;
+        position: relative;
         display: inline-block;
         padding: 15px 30px;
         border: 2px solid #fefefe;
@@ -1702,10 +1705,13 @@ $spacefontRUS: 'Pobeda';
       }
       
       button {
+        position: relative;
         background-color: none;
         text-decoration: none;
-        background-color: #212121;
+        background-color: rgba(11, 11, 12, 0.473);
         border: none;
+        top: 265px;
+        left: 40px;
       }
       .txtneptune{
         position: absolute;
@@ -1827,18 +1833,15 @@ $spacefontRUS: 'Pobeda';
   }
     }
     a {
-      span{
+      span{ 
         left: 2px;
       }
-      position: absolute;
-      top: 265px;
-      left: 46px;
+      position: relative;
       display: inline-block;
       padding: 15px 30px;
       border: 2px solid #fefefe;
       text-transform: uppercase;
       color: #fefefe;
-      text-decoration: none;
       text-decoration: none;
       font-weight: 100;
       font-size: 24px;
@@ -1885,10 +1888,13 @@ $spacefontRUS: 'Pobeda';
     }
     
     button {
+      position: relative;
       background-color: none;
       text-decoration: none;
-      background-color: #212121;
+      background-color: rgba(11, 11, 12, 0.473);
       border: none;
+      top: 265px;
+      left: 40px;
     }
     .txtsun{
       position: absolute;
