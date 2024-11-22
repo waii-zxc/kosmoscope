@@ -1810,15 +1810,18 @@
     width: 110%;
   }
   body .planets a, html .planets a {
-    left: 5px !important;
-    top: 125px !important;
-    width: 50px !important;
     font-size: 15px !important;
     height: 1px !important;
+    width: 50px !important;
   }
   body .planets a span, html .planets a span {
     left: -7px !important;
     top: -7px !important;
+  }
+  body .planets button, html .planets button {
+    top: 125px !important;
+    width: 20px !important;
+    left: 1px !important;
   }
   body .planets p, html .planets p {
     font-size: 20px !important;

@@ -1937,15 +1937,18 @@ $spacefontRUS: 'Pobeda';
       width: 110%;
     .planets{
       a{
-        left: 5px !important;
-        top: 125px !important;
-        width: 50px !important;
         font-size: 15px !important;
         height: 1px !important;
+        width: 50px !important;
       span{
         left: -7px !important;
         top: -7px !important;
       }
+      }
+      button{
+        top: 125px !important;
+        width: 20px !important;
+        left: 1px !important;
       }
       p{
         font-size: 20px !important;
